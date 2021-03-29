@@ -106,7 +106,7 @@ html, body
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 902.5px;
+    left: 790.5px;
     color: white;
     background-color: #9356DC;
     border-radius: 10px;
@@ -197,10 +197,37 @@ html, body
 
     .restaurants__cards
     {
-
         margin: 0 18px 18px 18px;
-
     }
+
+    .header__logo
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header__logo button
+    {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 0;
+        padding: 0 116px 0 18px;
+    }
+    
+    .header__image
+    {
+        width: 375px;
+        height: 250px;
+    }
+
+    .header__image img
+    {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
 
     .header__infos
     {
@@ -274,6 +301,45 @@ html, body
     .cards:hover
     {
         color: #9356DC;
+    }
+
+    
+    .menu,.entrees, .plats, .desserts
+    {
+        width: 100%;
+    }
+
+    .entrees p, .plats p, .desserts p
+    {
+        margin: 16px 0 8px 8px;
+    }
+
+    .menu__cards
+    {
+        width: 94%;
+        height: 60px;
+        border: 2px solid #F2F2F2;
+        margin: 0 0 8px 8px;
+        border-radius: 10px;
+    }
+
+    .menu__cards h4, .menu__cards p
+    {
+        height: 18px;
+        margin: 0;
+    }
+
+    .menu__cards h4
+    {
+        margin: 8px 0 8px 8px;
+    }
+
+    .-description
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
     }
 
 
