@@ -1,0 +1,280 @@
+logo, titre
+{
+    font-family: Shrikhand;
+}
+
+html, body
+{
+    margin: 0 0 0 0;
+    font-family: Roboto;
+}
+
+
+
+#header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#fonctionnement
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#restaurants
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgrey;
+}
+
+#footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #22201f;
+    color: white;
+}
+
+.header__logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.header__lieux
+{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+.header__infos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
+.header__infos p
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 8px 0;
+}
+
+.header__infos button
+{
+    width: 276px;
+    background-color: #9356DC;
+    border: 10px solid #9356DC;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.fonctionnement__cards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    margin: 12px 0 12px 0;
+    border: 1px solid #F2F2F2;
+    width: 270px;
+    padding: 0 0 0 32px;
+    background-color: #F2F2F2;
+    color: black;
+}
+
+.cards h
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 902.5px;
+    color: white;
+    background-color: #9356DC;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.cards p
+{
+    font-weight: bold;
+}
+
+.cards i
+{
+    padding: 0 18px 0 0 ;
+}
+
+.cards:hover
+{
+    color: #9356DC;
+}
+
+
+
+
+.menus
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.restaurants__cards
+{
+    width: 332px;
+    height: 204px;
+    margin: 12px 40px 50px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+    text-decoration: none;
+    color: black;
+}
+
+.restaurants__cards h4
+{
+    margin: 0 0 0 0;
+    padding-left: 8px;
+}
+
+.restaurants__cards p
+{
+    margin: 8px 0 0 0;
+    padding-left: 8px;
+}
+
+.restaurants__cards img
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+#footer p, #footer a, #footer i
+{
+    color: white;
+    margin: 0 0 8px 0;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+
+    #footer
+    {
+    padding: 0 0 0 18px;
+    }
+
+    .menus
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurants__cards
+    {
+
+        margin: 0 18px 18px 18px;
+
+    }
+
+    .header__infos
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__infos p
+    {
+        width: 65%;
+        margin: 0 0 8px 0;
+    }
+
+    .header__infos h3
+    {
+        font-weight: bold;
+        width: 40%;
+    }
+
+    .header__infos button
+    {
+        width: 276px;
+        background-color: #9356DC;
+        border: 10px solid #9356DC;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    .fonctionnement__cards
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 10px;
+        margin: 12px 0 12px 0;
+        border: 1px solid #F2F2F2;
+        width: 270px;
+        padding: 0 0 0 32px;
+    }
+
+    .cards h
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 26.5px;
+        background-color: #9356DC;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .cards p
+    {
+        font-weight: bold;
+    }
+
+    .cards i
+    {
+        padding: 0 18px 0 0 ;
+    }
+
+    .cards:hover
+    {
+        color: #9356DC;
+    }
+
+
+}
