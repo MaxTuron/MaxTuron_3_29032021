@@ -256,6 +256,19 @@ html, body
         border-radius: 10px 10px 10px 10px;
     }
 
+    .header__name
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+        border-top-left-radius: 48px;
+        border-top-right-radius: 48px;
+        position: absolute;
+        bottom: 512px;
+        width: 375px;
+    }
+
     .fonctionnement__cards
     {
         display: flex;
@@ -302,6 +315,12 @@ html, body
     {
         color: #9356DC;
     }
+    
+    .menu
+    {
+        background-color: #F2F2F2;
+        margin: -16px 0 0 0;
+    }
 
     
     .menu,.entrees, .plats, .desserts
@@ -317,10 +336,10 @@ html, body
     .menu__cards
     {
         width: 94%;
-        height: 60px;
         border: 2px solid #F2F2F2;
         margin: 0 0 8px 8px;
-        border-radius: 10px;
+        border-radius: 18px;
+        background-color: white;
     }
 
     .menu__cards h4, .menu__cards p
