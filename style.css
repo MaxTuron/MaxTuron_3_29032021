@@ -200,10 +200,10 @@ html, body
         margin: 0 18px 18px 18px;
     }
 
-    .header__logo
+    .header__logo img
     {
-        display: flex;
-        justify-content: flex-start;
+        width: 250px;
+        margin: 8px 0 8px 0;
     }
 
     .header__logo button
@@ -252,7 +252,7 @@ html, body
     {
         width: 276px;
         background-color: #9356DC;
-        border: 10px solid #9356DC;
+        color: white;
         border-radius: 10px 10px 10px 10px;
     }
 
@@ -267,6 +267,13 @@ html, body
         position: absolute;
         bottom: 512px;
         width: 375px;
+    }
+
+    .header__lieux i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .fonctionnement__cards
@@ -359,6 +366,11 @@ html, body
         flex-direction: row;
         justify-content: space-between;
         border: none;
+    }
+
+    #footer img
+    {
+        color: white;
     }
 
 
