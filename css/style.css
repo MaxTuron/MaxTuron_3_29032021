@@ -47,7 +47,6 @@ html, body {
 #fonctionnement {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 #fonctionnement .fonctionnement__cards {
   display: flex;
@@ -71,13 +70,14 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 790.5px;
+  position: sticky;
   color: white;
   background-color: #9356DC;
   border-radius: 10px;
   width: 20px;
   height: 20px;
+  margin-left: -42px;
+  margin-right: 42px;
 }
 #fonctionnement .fonctionnement__cards .cards p {
   font-weight: bold;
@@ -193,6 +193,9 @@ html, body {
     align-items: center;
   }
 
+  #restaurants h3 {
+    margin-right: 228px;
+  }
   #restaurants .menus {
     display: flex;
     flex-direction: column;
@@ -201,12 +204,15 @@ html, body {
     margin: 0 18px 18px 18px;
   }
 
-  .fonctionnement__cards {
+  #fonctionnement h3 {
+    margin-left: 22px;
+  }
+  #fonctionnement .fonctionnement__cards {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .fonctionnement__cards .cards {
+  #fonctionnement .fonctionnement__cards .cards {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -216,24 +222,23 @@ html, body {
     width: 270px;
     padding: 0 0 0 32px;
   }
-  .fonctionnement__cards .cards .cards h {
+  #fonctionnement .fonctionnement__cards .cards .cards h {
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
-    left: 26.5px;
     background-color: #9356DC;
     border-radius: 10px;
     width: 20px;
     height: 20px;
   }
-  .fonctionnement__cards .cards .cards p {
+  #fonctionnement .fonctionnement__cards .cards .cards p {
     font-weight: bold;
   }
-  .fonctionnement__cards .cards .cards i {
+  #fonctionnement .fonctionnement__cards .cards .cards i {
     padding: 0 18px 0 0;
   }
-  .fonctionnement__cards .cards .cards:hover {
+  #fonctionnement .fonctionnement__cards .cards .cards:hover {
     color: #9356DC;
   }
 
@@ -248,20 +253,17 @@ html, body {
     border-radius: 18px;
     background-color: white;
   }
-  .menu .menu__cards .menu, .menu .menu__cards .entrees, .menu .menu__cards .plats, .menu .menu__cards .desserts {
+  .menu .menu, .menu .entrees, .menu .plats, .menu .desserts {
     width: 100%;
   }
-  .menu .menu__cards .entrees p, .menu .menu__cards .plats p, .menu .menu__cards .desserts p {
+  .menu .entrees p, .menu .plats p, .menu .desserts p {
     margin: 16px 0 8px 8px;
   }
-  .menu .menu__cards .menu__cards h4, .menu .menu__cards .menu__cards p {
+  .menu .menu__cards h4, .menu .menu__cards p {
     height: 18px;
-    margin: 0;
+    margin: 8px 0 8px 0;
   }
-  .menu .menu__cards .menu__cards h4 {
-    margin: 8px 0 8px 8px;
-  }
-  .menu .menu__cards .-description {
+  .menu .-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -271,8 +273,9 @@ html, body {
   #footer {
     padding: 0 0 0 18px;
   }
-  #footer #footer img {
-    color: white;
+  #footer img {
+    height: 75px;
+    width: 98px;
   }
 }
 

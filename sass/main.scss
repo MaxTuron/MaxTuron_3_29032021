@@ -54,7 +54,6 @@ html, body
 {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   .fonctionnement__cards {
     display: flex;
@@ -79,13 +78,14 @@ html, body
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        left: 790.5px;
+        position: sticky;
         color: white;
         background-color: #9356DC;
         border-radius: 10px;
         width: 20px;
         height: 20px;
+        margin-left: -42px;
+        margin-right: 42px;
       }
 
       .cards p {
@@ -232,6 +232,12 @@ html, body
   }
 
   #restaurants {
+
+    h3
+    {
+      margin-right: 228px;
+    }
+
     .menus {
       display: flex;
       flex-direction: column;
@@ -242,43 +248,49 @@ html, body
     }
   }
 
-  .fonctionnement__cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #fonctionnement {
 
-    .cards {
+    h3
+    {
+      margin-left: 22px;
+    }
+    .fonctionnement__cards {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      border-radius: 10px;
-      margin: 12px 0 12px 0;
-      border: 1px solid #F2F2F2;
-      width: 270px;
-      padding: 0 0 0 32px;
 
-      .cards h {
+      .cards {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        position: sticky;
-        left: 26.5px;
-        background-color: #9356DC;
         border-radius: 10px;
-        width: 20px;
-        height: 20px;
-      }
+        margin: 12px 0 12px 0;
+        border: 1px solid #F2F2F2;
+        width: 270px;
+        padding: 0 0 0 32px;
 
-      .cards p {
-        font-weight: bold;
-      }
+        .cards h {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: sticky;
+          background-color: #9356DC;
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
+        }
 
-      .cards i {
-        padding: 0 18px 0 0;
-      }
+        .cards p {
+          font-weight: bold;
+        }
 
-      .cards:hover {
-        color: #9356DC;
+        .cards i {
+          padding: 0 18px 0 0;
+        }
+
+        .cards:hover {
+          color: #9356DC;
+        }
       }
     }
   }
@@ -293,6 +305,7 @@ html, body
       margin: 0 0 8px 8px;
       border-radius: 18px;
       background-color: white;
+    }
 
 
       .menu, .entrees, .plats, .desserts {
@@ -303,14 +316,9 @@ html, body
         margin: 16px 0 8px 8px;
       }
 
-
       .menu__cards h4, .menu__cards p {
         height: 18px;
-        margin: 0;
-      }
-
-      .menu__cards h4 {
-        margin: 8px 0 8px 8px;
+        margin: 8px 0 8px 0;
       }
 
       .-description {
@@ -320,13 +328,13 @@ html, body
         border: none;
       }
     }
-  }
 
   #footer {
     padding: 0 0 0 18px;
 
-    #footer img {
-      color: white;
+    img {
+      height: 75px;
+      width: 98px;
     }
   }
 }
