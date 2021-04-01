@@ -1,10 +1,21 @@
-logo, titre {
-  font-family: Shrikhand;
-}
-
 html, body {
   margin: 0 0 0 0;
   font-family: Roboto;
+}
+
+.btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 2px 5px 2px darkgrey;
+}
+
+.btn__grad {
+  background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
 }
 
 #header {
@@ -31,16 +42,6 @@ html, body {
   display: flex;
   justify-content: center;
   margin: 0 0 8px 0;
-}
-#header .header__btn {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 0 2px 5px 2px darkgrey;
 }
 
 #fonctionnement {
@@ -135,10 +136,6 @@ html, body {
   color: white;
   margin: 0 0 8px 0;
   text-decoration: none;
-}
-
-.btn__grad {
-  background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
 }
 
 @media screen and (max-width: 375px) {
