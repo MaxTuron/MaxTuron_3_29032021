@@ -3,6 +3,19 @@ html, body {
   font-family: Roboto;
 }
 
+.restaurants__cards h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  background-color: #99E2D0;
+  width: 62px;
+  height: 20px;
+  border-radius: 2px;
+  position: absolute;
+  margin: 16px 0 0 254px;
+}
+
 .btn {
   margin: 10px;
   text-align: center;
@@ -11,6 +24,9 @@ html, body {
   border-radius: 30px;
   border: none;
   box-shadow: 0 2px 5px 2px darkgrey;
+}
+.btn:hover {
+  background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
 }
 
 .btn__header {
@@ -26,6 +42,9 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#header .header__name p {
+  font-family: "Shrikhand", cursive;
 }
 #header .header__logo {
   display: flex;
@@ -197,6 +216,15 @@ html, body {
     margin: 0 12px 0 0;
   }
 
+  #restaurants .-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
+  #restaurants .-description i {
+    margin-right: 18px;
+  }
   #restaurants h3 {
     margin-right: 228px;
   }
@@ -250,37 +278,41 @@ html, body {
     background-color: #F2F2F2;
     margin: -16px 0 0 0;
   }
-  .menu .menu__cards {
+
+  .menu__cards {
     width: 94%;
     border: 2px solid #F2F2F2;
     margin: 0 0 8px 8px;
     border-radius: 18px;
     background-color: white;
   }
-  .menu .menu, .menu .entrees, .menu .plats, .menu .desserts {
+
+  .menu, .entrees, .plats, .desserts {
     width: 100%;
   }
-  .menu .entrees p, .menu .plats p, .menu .desserts p {
+
+  .entrees p, .plats p, .desserts p {
     margin: 16px 0 8px 8px;
   }
-  .menu .menu__cards h4, .menu .menu__cards p {
+
+  .menu__cards h4, .menu__cards p {
     height: 18px;
     margin: 8px 0 8px 0;
   }
-  .menu .-description {
+
+  .-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: none;
   }
-
-  #footer {
-    padding: 0 0 0 18px;
-  }
-  #footer img {
-    height: 75px;
-    width: 98px;
-  }
+}
+#footer {
+  padding: 0 0 0 18px;
+}
+#footer img {
+  height: 75px;
+  width: 98px;
 }
 
 /*# sourceMappingURL=style.css.map */

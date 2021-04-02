@@ -4,6 +4,20 @@ html, body
   font-family: Roboto;
 }
 
+.restaurants__cards{
+  h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    background-color: #99E2D0;
+    width: 62px;
+    height: 20px;
+    border-radius: 2px;
+    position: absolute;
+    margin: 16px 0 0 254px;
+  }
+}
 
 .btn {
   margin: 10px;
@@ -13,6 +27,10 @@ html, body
   border-radius: 30px;
   border: none;
   box-shadow: 0 2px 5px 2px darkgrey;
+  &:hover {
+    background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
+  }
+
 }
 
 .btn__header
@@ -28,6 +46,10 @@ html, body
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .header__name p
+  {
+    font-family: 'Shrikhand', cursive;
+  }
 
   .header__logo {
     display: flex;
@@ -237,6 +259,17 @@ html, body
 
   #restaurants {
 
+    .-description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border: none;
+
+      i{
+        margin-right: 18px;
+      }
+    }
+
     h3
     {
       margin-right: 228px;
@@ -302,6 +335,7 @@ html, body
   .menu {
       background-color: #F2F2F2;
       margin: -16px 0 0 0;
+    }
 
     .menu__cards {
       width: 94%;
@@ -341,4 +375,3 @@ html, body
       width: 98px;
     }
   }
-}
