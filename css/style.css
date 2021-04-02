@@ -29,11 +29,6 @@ html, body {
   background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
 }
 
-.btn__header {
-  width: 215px;
-  padding: 12px;
-}
-
 .btn__grad {
   background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
 }
@@ -65,6 +60,10 @@ html, body {
   display: flex;
   justify-content: center;
   margin: 0 0 8px 0;
+}
+#header .btn__header {
+  width: 215px;
+  padding: 12px;
 }
 
 #fonctionnement {
@@ -280,9 +279,8 @@ html, body {
   }
 
   .menu__cards {
-    width: 94%;
+    width: 97%;
     border: 2px solid #F2F2F2;
-    margin: 0 0 8px 8px;
     border-radius: 18px;
     background-color: white;
   }
@@ -296,8 +294,8 @@ html, body {
   }
 
   .menu__cards h4, .menu__cards p {
-    height: 18px;
-    margin: 8px 0 8px 0;
+    height: 16px;
+    margin: 6px 0 8px 8px;
   }
 
   .-description {
@@ -305,6 +303,12 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     border: none;
+  }
+
+  .btn__menu {
+    width: 215px;
+    padding: 12px;
+    margin: 16px 0 16px 74px;
   }
 }
 #footer {
