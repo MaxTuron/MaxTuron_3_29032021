@@ -3,19 +3,6 @@ html, body {
   font-family: Roboto;
 }
 
-.restaurants__cards h6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: green;
-  background-color: #99E2D0;
-  width: 62px;
-  height: 20px;
-  border-radius: 2px;
-  position: absolute;
-  margin: 16px 0 0 254px;
-}
-
 .btn {
   margin: 10px;
   text-align: center;
@@ -109,8 +96,6 @@ html, body {
 }
 #fonctionnement .fonctionnement__cards .cards :hover {
   color: #9356DC;
-  font-size: 40px;
-  transition: font-size 1s ease-in-out;
 }
 
 #restaurants {
@@ -124,7 +109,8 @@ html, body {
   flex-direction: row;
   justify-content: center;
 }
-#restaurants .restaurants__cards {
+
+.restaurants__cards {
   width: 332px;
   height: 204px;
   margin: 12px 40px 50px 0;
@@ -134,26 +120,34 @@ html, body {
   text-decoration: none;
   color: black;
 }
-#restaurants .restaurants__cards h4 {
+.restaurants__cards .img__restaurants {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.restaurants__cards .img__restaurants .btn__nouveau {
+  color: green;
+  background-color: #99E2D0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+h4 {
   margin: 0 0 0 0;
   padding-left: 8px;
 }
-#restaurants .restaurants__cards p {
+
+p {
   margin: 8px 0 0 0;
   padding-left: 8px;
 }
-#restaurants .restaurants__cards img {
+
+img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-}
-#restaurants .restaurants__cards i {
-  color: white;
-}
-#restaurants .restaurants__cards i:hover {
-  color: #DA22FF;
-  transition: color 1s ease-in-out;
 }
 
 #footer {
@@ -171,7 +165,8 @@ html, body {
 
 @media screen and (max-width: 375px) {
   #header .header__logo img {
-    width: 250px;
+    width: 100%;
+    height: 100%;
     margin: 8px 0 8px 0;
   }
   #header .header__logo button {
@@ -224,24 +219,52 @@ html, body {
     margin: 0 12px 0 0;
   }
 
-  #restaurants .-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: none;
-  }
-  #restaurants .-description i {
-    margin-right: 18px;
-  }
-  #restaurants h3 {
-    margin-right: 228px;
-  }
   #restaurants .menus {
     display: flex;
     flex-direction: column;
   }
   #restaurants .menus .restaurants__cards {
+    height: 100%;
     margin: 0 18px 18px 18px;
+  }
+  #restaurants .menus .restaurants__cards h3 {
+    margin-right: 228px;
+  }
+  #restaurants .menus .restaurants__cards .cards__content {
+    display: flex;
+    flex-direction: row;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-infos {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-hearts {
+    margin-left: 122px;
+    font-size: 24px;
+    height: 24px;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-hearts .far {
+    opacity: 1;
+    color: #F2F2F2;
+    position: absolute;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-hearts .fas {
+    color: white;
+    height: 24px;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-hearts:hover {
+    cursor: pointer;
+    overflow: hidden;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-hearts:hover .far {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-hearts:hover .fas {
+    opacity: 1;
+    color: #DA22FF;
+    transition: all 0.5s ease-in-out;
   }
 
   #fonctionnement h3 {
@@ -300,6 +323,7 @@ html, body {
   .menu .menu__cards .-contenu {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
   .menu .menu__cards .menu__cards:hover + .check {
     display: flex;
@@ -307,6 +331,7 @@ html, body {
     width: 30px;
     justify-content: flex-end;
     color: #99E2D0;
+    text-overflow: ellipsis;
     transition: all 3s;
   }
   .menu .menu, .menu .entrees, .menu .plats, .menu .desserts {
@@ -319,12 +344,6 @@ html, body {
     height: 16px;
     margin: 6px 0 8px 8px;
   }
-  .menu .-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: none;
-  }
   .menu .btn__menu {
     width: 215px;
     padding: 12px;
@@ -335,8 +354,9 @@ html, body {
     padding: 0 0 0 18px;
   }
   #footer img {
-    height: 75px;
-    width: 98px;
+    height: 32px;
+    margin: 8px 0 8px 0;
+    width: 54%;
   }
 }
 
