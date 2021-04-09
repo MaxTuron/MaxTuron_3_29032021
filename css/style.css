@@ -208,7 +208,7 @@ img {
     border-top-left-radius: 48px;
     border-top-right-radius: 48px;
     position: absolute;
-    bottom: 503px;
+    bottom: 487px;
     top: 268px;
     width: 375px;
   }
@@ -307,57 +307,94 @@ img {
 
   .menu {
     background-color: #F2F2F2;
-    margin: -16px 0 0 0;
+    margin: -8px 0 0 0;
   }
-  .menu .check {
-    display: none;
+
+  .entrees h2, .plats h2, .desserts h2 {
+    margin: 8px 0 0 0;
+    border-bottom: 2px solid #99E2D0;
+    width: 40px;
+    margin-bottom: 8px;
   }
-  .menu .menu__cards {
+
+  .menu__cards {
     display: flex;
     flex-direction: row;
-    width: 99%;
-    border: 2px solid #F2F2F2;
     border-radius: 18px;
     background-color: white;
+    margin-bottom: 8px;
   }
-  .menu .menu__cards .-contenu {
+  .menu__cards .-contenu {
     display: flex;
+    width: 80%;
     flex-direction: column;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
-  .menu .menu__cards .menu__cards:hover + .check {
+  .menu__cards .-prix {
+    width: 10%;
+  }
+  .menu__cards .-check {
+    display: none;
+    position: relative;
+  }
+  .menu__cards .menu__cards:hover + .-check {
     display: flex;
     align-items: center;
     width: 30px;
     justify-content: flex-end;
     color: #99E2D0;
     text-overflow: ellipsis;
+    animation: rotate 1s 1;
     transition: all 3s;
   }
-  .menu .menu, .menu .entrees, .menu .plats, .menu .desserts {
-    width: 100%;
+  @keyframes rotate {
+    10% {
+      transform: rotate(-80deg) scale(1.02);
+    }
+    20% {
+      transform: rotate(-70deg) scale(1.1);
+    }
+    30% {
+      transform: rotate(-60deg) scale(1.18);
+    }
+    40% {
+      transform: rotate(-50deg) scale(1.26);
+    }
+    50% {
+      transform: rotate(-40deg) scale(1.34);
+    }
+    60% {
+      transform: rotate(-30deg) scale(1.26);
+    }
+    70% {
+      transform: rotate(-20deg) scale(1.18);
+    }
+    80% {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    90% {
+      transform: rotate(0deg) scale(1.08);
+    }
+    100% {
+      transform: rotate(5deg) scale(1.02);
+    }
   }
-  .menu .entrees p, .menu .plats p, .menu .desserts p {
-    margin: 16px 0 8px 8px;
-  }
-  .menu .menu__cards h4, .menu .menu__cards p {
-    height: 16px;
-    margin: 6px 0 8px 8px;
-  }
-  .menu .btn__menu {
+
+  .btn__menu {
     width: 215px;
     padding: 12px;
     margin: 16px 0 16px 74px;
   }
-
-  #footer {
-    padding: 0 0 0 18px;
-  }
-  #footer img {
-    height: 32px;
-    margin: 8px 0 8px 0;
-    width: 54%;
-  }
+}
+#footer {
+  padding: 0 0 0 18px;
+}
+#footer img {
+  height: 32px;
+  margin: 8px 0 8px 0;
+  width: 54%;
 }
 
 /*# sourceMappingURL=style.css.map */

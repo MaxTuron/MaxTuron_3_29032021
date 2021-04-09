@@ -244,7 +244,7 @@ html, body
       border-top-left-radius: 48px;
       border-top-right-radius: 48px;
       position: absolute;
-      bottom: 503px;
+      bottom: 487px;
       top: 268px;
       width: 375px;
     }
@@ -258,7 +258,6 @@ html, body
   }
 
   #restaurants {
-
     .menus {
       display: flex;
       flex-direction: column;
@@ -298,135 +297,153 @@ html, body
             }
           }
 
-            .-hearts:hover {
-              cursor: pointer;
-              overflow: hidden;
+          .-hearts:hover {
+            cursor: pointer;
+            overflow: hidden;
 
-              .far {
-                opacity: 0;
-                transition: all 0.5s ease-in-out;
-              }
-
-                .fas {
-                  opacity: 1;
-                  color: #DA22FF;
-                  transition: all 0.5s ease-in-out;
-                }
+            .far {
+              opacity: 0;
+              transition: all 0.5s ease-in-out;
             }
+
+            .fas {
+              opacity: 1;
+              color: #DA22FF;
+              transition: all 0.5s ease-in-out;
+            }
+          }
         }
       }
     }
   }
 
-      #fonctionnement {
+  #fonctionnement {
 
-        h3 {
-          margin-left: 22px;
-        }
+    h3 {
+      margin-left: 22px;
+    }
 
-        .fonctionnement__cards {
+    .fonctionnement__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 10px;
+        margin: 12px 0 12px 0;
+        border: 1px solid #F2F2F2;
+        width: 270px;
+        padding: 0 0 0 32px;
+
+        h {
           display: flex;
-          flex-direction: column;
           align-items: center;
-
-          .cards {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            border-radius: 10px;
-            margin: 12px 0 12px 0;
-            border: 1px solid #F2F2F2;
-            width: 270px;
-            padding: 0 0 0 32px;
-
-            h {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: sticky;
-              background-color: #9356DC;
-              border-radius: 10px;
-              width: 20px;
-              height: 20px;
-            }
-
-            p {
-              font-weight: bold;
-            }
-
-            .cards i {
-              padding: 0 18px 0 0;
-            }
-
-            .cards:hover {
-              color: #9356DC;
-            }
-          }
-        }
-      }
-
-
-      .menu {
-        background-color: #F2F2F2;
-        margin: -16px 0 0 0;
-
-        .check {
-          display: none;
+          justify-content: center;
+          position: sticky;
+          background-color: #9356DC;
+          border-radius: 10px;
+          width: 20px;
+          height: 20px;
         }
 
-
-        .menu__cards {
-          display: flex;
-          flex-direction: row;
-          width: 99%;
-          border: 2px solid #F2F2F2;
-          border-radius: 18px;
-          background-color: white;
-
-          .-contenu {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-          }
-
-          .menu__cards:hover + .check {
-            display: flex;
-            align-items: center;
-            width: 30px;
-            justify-content: flex-end;
-            color: #99E2D0;
-            text-overflow: ellipsis;
-            transition: all 3s;
-          }
+        p {
+          font-weight: bold;
         }
 
-        .menu, .entrees, .plats, .desserts {
-          width: 100%;
+        .cards i {
+          padding: 0 18px 0 0;
         }
 
-        .entrees p, .plats p, .desserts p {
-          margin: 16px 0 8px 8px;
-        }
-
-        .menu__cards h4, .menu__cards p {
-          height: 16px;
-          margin: 6px 0 8px 8px;
-        }
-
-        .btn__menu {
-          width: 215px;
-          padding: 12px;
-          margin: 16px 0 16px 74px;
-        }
-      }
-
-      #footer {
-        padding: 0 0 0 18px;
-
-        img {
-          height: 32px;
-          margin: 8px 0 8px 0;
-          width: 54%;
+        .cards:hover {
+          color: #9356DC;
         }
       }
     }
+  }
+
+
+  .menu {
+    background-color: #F2F2F2;
+    margin: -8px 0 0 0;
+  }
+
+  .entrees h2, .plats h2, .desserts h2
+  {
+    margin: 8px 0 0 0;
+    border-bottom: 2px solid #99E2D0;
+    width: 40px;
+    margin-bottom: 8px;
+  }
+
+
+  .menu__cards {
+    display: flex;
+    flex-direction: row;
+    border-radius: 18px;
+    background-color: white;
+    margin-bottom: 8px;
+
+    .-contenu {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .-prix
+    {
+      width: 10%;
+    }
+
+    .-check {
+      display: none;
+      position: relative;
+    }
+
+    .menu__cards:hover + .-check {
+      display: flex;
+      align-items: center;
+      width: 30px;
+      justify-content: flex-end;
+      color: #99E2D0;
+      text-overflow: ellipsis;
+      animation: rotate 1s 1;
+      transition: all 3s;
+    }
+    
+    @keyframes rotate {
+      10% {transform: rotate(-80deg) scale(1.02)}
+      20% {transform: rotate(-70deg) scale(1.10)}
+      30% {transform: rotate(-60deg) scale(1.18)}
+      40% {transform: rotate(-50deg) scale(1.26)}
+      50% {transform: rotate(-40deg) scale(1.34)}
+      60% {transform: rotate(-30deg) scale(1.26)}
+      70% {transform: rotate(-20deg) scale(1.18)}
+      80% {transform: rotate(-10deg) scale(1.10)}
+      90% {transform: rotate(0deg) scale(1.08)}
+      100% {transform: rotate(5deg) scale(1.02)}
+    }
+  }
+
+
+  .btn__menu {
+    width: 215px;
+    padding: 12px;
+    margin: 16px 0 16px 74px;
+  }
+}
+
+ #footer {
+   padding: 0 0 0 18px;
+
+   img {
+     height: 32px;
+     margin: 8px 0 8px 0;
+     width: 54%;
+   }
+ }
