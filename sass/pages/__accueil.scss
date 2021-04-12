@@ -130,39 +130,6 @@ img {
             flex-direction: column;
             width: 170px;
           }
-
-          .-hearts {
-            margin-left: 122px;
-            font-size: 24px;
-            height: 24px;
-
-            .far {
-              opacity: 1;
-              color: $background_grey;
-              position: absolute;
-            }
-
-            .fas {
-              color: white;
-              height: 24px;
-            }
-          }
-
-          .-hearts:hover {
-            cursor: pointer;
-            overflow: hidden;
-
-            .far {
-              opacity: 0;
-              transition: all 0.5s ease-in-out;
-            }
-
-            .fas {
-              opacity: 1;
-              color: #DA22FF;
-              transition: all 0.5s ease-in-out;
-            }
-          }
         }
       }
     }

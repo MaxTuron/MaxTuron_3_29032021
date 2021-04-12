@@ -3,6 +3,52 @@ body {
   font-family: "Roboto", cursive;
 }
 
+.btn {
+  margin: 10px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 2px 5px 2px darkgrey;
+}
+.btn:hover {
+  background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
+}
+
+.btn__grad {
+  background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
+}
+
+.-hearts {
+  margin-left: 122px;
+  font-size: 24px;
+  height: 24px;
+}
+.-hearts .far {
+  opacity: 1;
+  color: #F2F2F2;
+  position: absolute;
+}
+.-hearts .fas {
+  color: white;
+  height: 24px;
+}
+
+.-hearts:hover {
+  cursor: pointer;
+  overflow: hidden;
+}
+.-hearts:hover .far {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.-hearts:hover .fas {
+  opacity: 1;
+  color: #DA22FF;
+  transition: all 0.5s ease-in-out;
+}
+
 #footer {
   display: flex;
   flex-direction: column;
@@ -114,36 +160,6 @@ body {
     margin: 0 12px 0 0;
   }
 }
-.menu {
-  background-color: #F2F2F2;
-  margin: -8px 0 0 0;
-}
-
-.entrees h2, .plats h2, .desserts h2 {
-  margin: 8px 0 8px 0;
-  border-bottom: 2px solid #99e2d0;
-  width: 40px;
-}
-
-.menu__cards {
-  display: flex;
-  flex-direction: row;
-  border-radius: 18px;
-  background-color: white;
-  margin-bottom: 8px;
-}
-.menu__cards .-contenu {
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu__cards .-prix {
-  display: flex;
-  animation: prix_translation 0.5s 1;
-}
 @keyframes prix_translation {
   10% {
     transform: translate(50px, 0);
@@ -176,19 +192,103 @@ body {
     transform: translate(1px, 0);
   }
 }
-.menu__cards .-check {
-  display: none;
+@keyframes rotate {
+  10% {
+    transform: rotate(-90deg) scale(1);
+  }
+  20% {
+    transform: rotate(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotate(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotate(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
 }
-.menu__cards :hover + .-check {
-  display: block;
-  flex: 0 0 15%;
-  align-items: center;
-  width: 30px;
-  justify-content: flex-end;
-  color: #99e2d0;
+.btn {
+  margin: 10px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 2px 5px 2px darkgrey;
+}
+.btn:hover {
+  background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
+}
+
+.btn__grad {
+  background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
+}
+
+.-hearts {
+  margin-left: 122px;
+  font-size: 24px;
+  height: 24px;
+}
+.-hearts .far {
+  opacity: 1;
+  color: #F2F2F2;
+  position: absolute;
+}
+.-hearts .fas {
+  color: white;
+  height: 24px;
+}
+
+.-hearts:hover {
+  cursor: pointer;
   overflow: hidden;
-  animation: rotate 0.5s 1;
-  transition: all 3s;
+}
+.-hearts:hover .far {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.-hearts:hover .fas {
+  opacity: 1;
+  color: #DA22FF;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes prix_translation {
+  10% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(44px, 0);
+  }
+  30% {
+    transform: translate(32px, 0);
+  }
+  40% {
+    transform: translate(25px, 0);
+  }
+  50% {
+    transform: translate(22px, 0);
+  }
+  60% {
+    transform: translate(16px, 0);
+  }
+  70% {
+    transform: translate(12px, 0);
+  }
+  80% {
+    transform: translate(8px, 0);
+  }
+  90% {
+    transform: translate(4px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
 }
 @keyframes rotate {
   10% {
@@ -209,6 +309,50 @@ body {
   100% {
     transform: rotate(5deg) scale(1);
   }
+}
+.menu {
+  background-color: #F2F2F2;
+  margin: -8px 0 0 0;
+}
+
+.entrees h2, .plats h2, .desserts h2 {
+  margin: 8px 0 8px 0;
+  border-bottom: 2px solid #99e2d0;
+  width: 40px;
+}
+
+.menu__cards {
+  display: flex;
+  flex-direction: row;
+  border-radius: 18px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+.menu__cards .-contenu {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__cards .-prix {
+  display: flex;
+  animation: prix_translation 0.5s 1;
+}
+.menu__cards .-check {
+  display: none;
+}
+.menu__cards :hover + .-check {
+  display: block;
+  flex: 0 0 15%;
+  align-items: center;
+  width: 30px;
+  justify-content: flex-end;
+  color: #99e2d0;
+  overflow: hidden;
+  animation: rotate 0.5s 1;
+  transition: all 3s;
 }
 
 .btn__menu {
@@ -334,33 +478,6 @@ img {
     display: flex;
     flex-direction: column;
     width: 170px;
-  }
-  #restaurants .menus .restaurants__cards .cards__content .-hearts {
-    margin-left: 122px;
-    font-size: 24px;
-    height: 24px;
-  }
-  #restaurants .menus .restaurants__cards .cards__content .-hearts .far {
-    opacity: 1;
-    color: #F2F2F2;
-    position: absolute;
-  }
-  #restaurants .menus .restaurants__cards .cards__content .-hearts .fas {
-    color: white;
-    height: 24px;
-  }
-  #restaurants .menus .restaurants__cards .cards__content .-hearts:hover {
-    cursor: pointer;
-    overflow: hidden;
-  }
-  #restaurants .menus .restaurants__cards .cards__content .-hearts:hover .far {
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-  }
-  #restaurants .menus .restaurants__cards .cards__content .-hearts:hover .fas {
-    opacity: 1;
-    color: #DA22FF;
-    transition: all 0.5s ease-in-out;
   }
 
   #fonctionnement h3 {

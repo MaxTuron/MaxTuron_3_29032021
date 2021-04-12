@@ -1,0 +1,22 @@
+@keyframes prix_translation {
+  10% {transform: translate(50px,0)}
+  20% {transform: translate(44px,0)}
+  30% {transform: translate(32px,0)}
+  40% {transform: translate(25px,0)}
+  50% {transform: translate(22px,0)}
+  60% {transform: translate(16px,0)}
+  70% {transform: translate(12px,0)}
+  80% {transform: translate(8px,0)}
+  90% {transform: translate(4px,0)}
+  100% {transform: translate(1px,0)}
+}
+
+
+@keyframes rotate {
+  10% {transform: rotate(-90deg) scale(1)}
+  20% {transform: rotate(-75deg) scale(1.03)}
+  40% {transform: rotate(-60deg) scale(1.08)}
+  60% {transform: rotate(-45deg) scale(1.15)}
+  80% {transform: rotate(-30deg) scale(1.08)}
+  100% {transform: rotate(5deg) scale(1)}
+}
