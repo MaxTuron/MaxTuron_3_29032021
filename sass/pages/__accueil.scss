@@ -1,16 +1,16 @@
 @import "../utils/_variables";
 
-#fonctionnement {
+.fonctionnement {
   display: flex;
   flex-direction: column;
 
-  &__cards {
+  &__section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .cards {
+    &__card {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -135,18 +135,18 @@ img {
     }
   }
 
-  #fonctionnement {
+  .fonctionnement {
 
     h3 {
       margin-left: 22px;
     }
 
-    .fonctionnement__cards {
+    &__section {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .cards {
+      &__card {
         display: flex;
         flex-direction: row;
         align-items: center;

@@ -32,8 +32,8 @@
   }
 }
 
-.menu__cards:hover {
-  .-check {
+.menu:hover {
+  .menu__check {
     display: block;
     align-items: center;
     width: 30px;
@@ -43,13 +43,13 @@
     transition: all 3s;
   }
 
-  .-prix
-  {;
+  .menu__prix
+  {
     animation: prix_translation 0.5s 1 forwards;
   }
 }
 
-.-check i {
+.menu__check i {
   display: flex;
   justify-content: center;
   animation: rotate_icon 0.5s 1;

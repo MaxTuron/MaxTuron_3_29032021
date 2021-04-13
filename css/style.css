@@ -50,7 +50,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.menu__cards:hover .-check {
+.menu:hover .menu__check {
   display: block;
   align-items: center;
   width: 30px;
@@ -59,11 +59,11 @@ body {
   overflow: hidden;
   transition: all 3s;
 }
-.menu__cards:hover .-prix {
+.menu:hover .menu__prix {
   animation: prix_translation 0.5s 1 forwards;
 }
 
-.-check i {
+.menu__check i {
   display: flex;
   justify-content: center;
   animation: rotate_icon 0.5s 1;
@@ -273,7 +273,7 @@ Déplacement du prix lors du survol
   transition: all 0.5s ease-in-out;
 }
 
-.menu__cards:hover .-check {
+.menu:hover .menu__check {
   display: block;
   align-items: center;
   width: 30px;
@@ -282,11 +282,11 @@ Déplacement du prix lors du survol
   overflow: hidden;
   transition: all 3s;
 }
-.menu__cards:hover .-prix {
+.menu:hover .menu__prix {
   animation: prix_translation 0.5s 1 forwards;
 }
 
-.-check i {
+.menu__check i {
   display: flex;
   justify-content: center;
   animation: rotate_icon 0.5s 1;
@@ -338,7 +338,7 @@ Déplacement du prix lors du survol
     transform: translate(-25px, 0);
   }
 }
-.menu {
+.carte {
   background-color: #F2F2F2;
   margin: -8px 0 0 0;
 }
@@ -349,7 +349,7 @@ Déplacement du prix lors du survol
   width: 40px;
 }
 
-.menu__cards {
+.menu {
   display: flex;
   flex-direction: row;
   border-radius: 18px;
@@ -357,7 +357,7 @@ Déplacement du prix lors du survol
   margin-bottom: 8px;
   width: 97%;
 }
-.menu__cards .-contenu {
+.menu__contenu {
   display: flex;
   width: 80%;
   padding-right: 8px;
@@ -365,17 +365,17 @@ Déplacement du prix lors du survol
   overflow: hidden;
   white-space: nowrap;
 }
-.menu__cards .-contenu p, .menu__cards .-contenu h4 {
+.menu__contenu p, .menu__contenu h4 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu__cards .-prix {
+.menu__prix {
   display: flex;
   justify-content: flex-end;
   width: 10%;
   margin: 0 0 0 25px;
 }
-.menu__cards .-check {
+.menu__check {
   display: none;
   margin: 8px 0 0 0;
   width: 10%;
@@ -387,17 +387,17 @@ Déplacement du prix lors du survol
   margin: 16px 0 16px 74px;
 }
 
-#fonctionnement {
+.fonctionnement {
   display: flex;
   flex-direction: column;
 }
-#fonctionnement__cards {
+.fonctionnement__section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#fonctionnement__cards .cards {
+.fonctionnement__section__card {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -409,7 +409,7 @@ Déplacement du prix lors du survol
   background-color: #F2F2F2;
   color: black;
 }
-#fonctionnement__cards .cards h6 {
+.fonctionnement__section__card h6 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -422,13 +422,13 @@ Déplacement du prix lors du survol
   margin-left: -42px;
   margin-right: 42px;
 }
-#fonctionnement__cards .cards p {
+.fonctionnement__section__card p {
   font-weight: bold;
 }
-#fonctionnement__cards .cards i {
+.fonctionnement__section__card i {
   padding: 0 18px 0 0;
 }
-#fonctionnement__cards .cards :hover {
+.fonctionnement__section__card :hover {
   color: #9356dc;
 }
 
@@ -506,15 +506,15 @@ img {
     width: 170px;
   }
 
-  #fonctionnement h3 {
+  .fonctionnement h3 {
     margin-left: 22px;
   }
-  #fonctionnement .fonctionnement__cards {
+  .fonctionnement__section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #fonctionnement .fonctionnement__cards .cards {
+  .fonctionnement__section__card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -524,7 +524,7 @@ img {
     width: 270px;
     padding: 0 0 0 32px;
   }
-  #fonctionnement .fonctionnement__cards .cards h3 {
+  .fonctionnement__section__card h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -534,13 +534,13 @@ img {
     width: 20px;
     height: 20px;
   }
-  #fonctionnement .fonctionnement__cards .cards p {
+  .fonctionnement__section__card p {
     font-weight: bold;
   }
-  #fonctionnement .fonctionnement__cards .cards i {
+  .fonctionnement__section__card i {
     padding: 0 18px 0 0;
   }
-  #fonctionnement .fonctionnement__cards .cards :hover {
+  .fonctionnement__section__card :hover {
     color: #9356dc;
   }
 }
