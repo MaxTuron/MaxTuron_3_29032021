@@ -1,0 +1,15 @@
+.btn {
+  margin: 10px;
+  text-align: center;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 2px 5px 2px darkgrey;
+  &:hover {
+    background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
+  }
+
+}
+
+.btn__grad {background-image: linear-gradient(to top, #9356DC  10%, #DA22FF  90%)}

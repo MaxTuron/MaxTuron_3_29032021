@@ -1,0 +1,24 @@
+#footer
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #22201f;
+  color: white;
+  p, a, i {
+  color: white;
+  margin: 0 0 8px 0;
+  text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #footer {
+    padding: 0 0 0 18px;
+
+    img {
+      height: 32px;
+      margin: 8px 0 8px 0;
+      width: 54%;
+    }
+  }
+}

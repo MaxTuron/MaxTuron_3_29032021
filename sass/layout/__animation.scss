@@ -1,0 +1,56 @@
+@import "../utils/_variables";
+.-hearts {
+  margin-left: 128px;
+  font-size: 32px;
+  height: 40px;
+  width: 40px;
+
+  .far {
+    opacity: 1;
+    color: $background_grey;
+    position: absolute;
+  }
+
+  .fas {
+    color: white;
+  }
+}
+
+.-hearts:hover {
+  cursor: pointer;
+  overflow: hidden;
+
+  .far {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .fas {
+    opacity: 1;
+    color: #DA22FF;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.menu__cards:hover {
+  .-check {
+    display: block;
+    align-items: center;
+    width: 30px;
+    justify-content: flex-end;
+    color: $color-tertiary;
+    overflow: hidden;
+    transition: all 3s;
+  }
+
+  .-prix
+  {;
+    animation: prix_translation 0.5s 1 forwards;
+  }
+}
+
+.-check i {
+  display: flex;
+  justify-content: center;
+  animation: rotate_icon 0.5s 1;
+}

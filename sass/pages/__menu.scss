@@ -1,0 +1,60 @@
+@import "../components/_buttons";
+@import "../layout/_animation";
+@import "../layout/_keyframes";
+@import "../utils/_variables";
+
+.menu {
+  background-color: $background_grey;
+  margin: -8px 0 0 0;
+}
+
+.entrees h2, .plats h2, .desserts h2
+{
+  margin: 8px 0 8px 0;
+  border-bottom: 2px solid $color-tertiary;
+  width: 40px;
+}
+
+
+.menu__cards {
+  display: flex;
+  flex-direction: row;
+  border-radius: 18px;
+  background-color: white;
+  margin-bottom: 8px;
+  width: 97%;
+
+  .-contenu {
+    display: flex;
+    width: 80%;
+    padding-right: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+
+    p, h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    };
+  }
+
+  .-prix
+  {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    margin: 0 0 0 25px;
+  }
+
+  .-check {
+    display: none;
+    margin: 8px 0 0 0;
+    width: 10%;
+  }
+}
+
+.btn__menu {
+  width: 215px;
+  padding: 12px;
+  margin: 16px 0 16px 74px;
+}
