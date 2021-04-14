@@ -19,6 +19,7 @@
 .-hearts:hover {
   cursor: pointer;
   overflow: hidden;
+  font-size: 32px;
 
   .far {
     opacity: 0;
@@ -32,12 +33,49 @@
   }
 }
 
+.-heartsMenu {
+  margin-left: 68px;
+  font-size: 32px;
+
+  .far {
+    opacity: 1;
+    color: black;
+    position: absolute;
+    left: 299px;
+    top: 4px;
+  }
+
+  .fas {
+    color: white;
+  }
+}
+
+.-heartsMenu:hover {
+  cursor: pointer;
+  overflow: hidden;
+
+  .far {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .fas {
+    opacity: 1;
+    color: #DA22FF;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+
 .menu:hover {
   .menu__check {
     display: block;
     align-items: center;
     justify-content: flex-end;
     color: white;
+    padding: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
     background-color: $color-tertiary;
     overflow: hidden;
     transition: all 3s;
@@ -53,6 +91,6 @@
 .menu__check i {
   display: flex;
   justify-content: center;
-  margin-top: 12px;
+  margin-top: 22px;
   animation: rotate_icon 0.5s 1;
 }
