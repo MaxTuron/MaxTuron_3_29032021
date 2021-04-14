@@ -36,11 +36,12 @@
   .menu__check {
     display: block;
     align-items: center;
-    width: 30px;
     justify-content: flex-end;
-    color: $color-tertiary;
+    color: white;
+    background-color: $color-tertiary;
     overflow: hidden;
     transition: all 3s;
+    animation: check_translation 0.5s 1 forwards;
   }
 
   .menu__prix
@@ -52,5 +53,6 @@
 .menu__check i {
   display: flex;
   justify-content: center;
+  margin-top: 12px;
   animation: rotate_icon 0.5s 1;
 }

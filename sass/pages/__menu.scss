@@ -48,8 +48,9 @@
 
   &__check {
     display: none;
-    margin: 8px 0 0 0;
-    width: 10%;
+    width: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
   }
 }
 

@@ -22,3 +22,14 @@ Déplacement du prix lors du survol
   80% {transform: translate(-20px, 0)}
   100% {transform: translate(-25px, 0)}
 }
+
+@keyframes check_translation {
+  from
+  {
+    width: 0%;
+  }
+  to
+  {
+    width: 10%;
+  }
+}

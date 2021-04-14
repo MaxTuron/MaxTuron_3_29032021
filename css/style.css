@@ -53,11 +53,12 @@ body {
 .menu:hover .menu__check {
   display: block;
   align-items: center;
-  width: 30px;
   justify-content: flex-end;
-  color: #99e2d0;
+  color: white;
+  background-color: #99e2d0;
   overflow: hidden;
   transition: all 3s;
+  animation: check_translation 0.5s 1 forwards;
 }
 .menu:hover .menu__prix {
   animation: prix_translation 0.5s 1 forwards;
@@ -66,6 +67,7 @@ body {
 .menu__check i {
   display: flex;
   justify-content: center;
+  margin-top: 12px;
   animation: rotate_icon 0.5s 1;
 }
 
@@ -227,6 +229,14 @@ Déplacement du prix lors du survol
     transform: translate(-25px, 0);
   }
 }
+@keyframes check_translation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 10%;
+  }
+}
 .btn {
   margin: 10px;
   text-align: center;
@@ -276,11 +286,12 @@ Déplacement du prix lors du survol
 .menu:hover .menu__check {
   display: block;
   align-items: center;
-  width: 30px;
   justify-content: flex-end;
-  color: #99e2d0;
+  color: white;
+  background-color: #99e2d0;
   overflow: hidden;
   transition: all 3s;
+  animation: check_translation 0.5s 1 forwards;
 }
 .menu:hover .menu__prix {
   animation: prix_translation 0.5s 1 forwards;
@@ -289,6 +300,7 @@ Déplacement du prix lors du survol
 .menu__check i {
   display: flex;
   justify-content: center;
+  margin-top: 12px;
   animation: rotate_icon 0.5s 1;
 }
 
@@ -338,6 +350,14 @@ Déplacement du prix lors du survol
     transform: translate(-25px, 0);
   }
 }
+@keyframes check_translation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 10%;
+  }
+}
 .carte {
   background-color: #F2F2F2;
   margin: -8px 0 0 0;
@@ -377,8 +397,9 @@ Déplacement du prix lors du survol
 }
 .menu__check {
   display: none;
-  margin: 8px 0 0 0;
-  width: 10%;
+  width: 0;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 
 .btn__menu {
