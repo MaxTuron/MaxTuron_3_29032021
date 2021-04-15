@@ -13,12 +13,25 @@
     background-color: #F2F2F2;
     border-top-left-radius: 48px;
     border-top-right-radius: 48px;
-    position: relative;
+    position: absolute;
+    top: 249px;
+    width: 100%;
     p {
       font-size: x-large;
       font-family: 'Shrikhand', cursive;
+      padding: 18px 0 0 16px;
     }
   }
+}
+
+.entrees
+{
+  padding-top: 32px;
+}
+
+.entrees, .plats, .desserts
+{
+margin-bottom: 32px;
 }
 
 .entrees h2, .plats h2, .desserts h2

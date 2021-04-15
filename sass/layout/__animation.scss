@@ -36,23 +36,28 @@
 .-heartsMenu {
   margin-left: 68px;
   font-size: 32px;
+  padding-top: 22px;
 
   .far {
     opacity: 1;
     color: black;
     position: absolute;
-    left: 299px;
-    top: 4px;
+    right: 15px;
+    bottom: 6px;
   }
 
   .fas {
     color: white;
+    position: absolute;
+    right: 15px;
+    bottom: 6px;
   }
 }
 
 .-heartsMenu:hover {
   cursor: pointer;
   overflow: hidden;
+  padding-top: 22px;
 
   .far {
     opacity: 0;

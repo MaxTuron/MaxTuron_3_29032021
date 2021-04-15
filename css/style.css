@@ -54,21 +54,26 @@ body {
 .-heartsMenu {
   margin-left: 68px;
   font-size: 32px;
+  padding-top: 22px;
 }
 .-heartsMenu .far {
   opacity: 1;
   color: black;
   position: absolute;
-  left: 299px;
-  top: 4px;
+  right: 15px;
+  bottom: 6px;
 }
 .-heartsMenu .fas {
   color: white;
+  position: absolute;
+  right: 15px;
+  bottom: 6px;
 }
 
 .-heartsMenu:hover {
   cursor: pointer;
   overflow: hidden;
+  padding-top: 22px;
 }
 .-heartsMenu:hover .far {
   opacity: 0;
@@ -124,6 +129,17 @@ body {
     height: 32px;
     margin: 8px 0 8px 0;
     width: 54%;
+  }
+  #footer i {
+    height: 18px;
+    width: 25px;
+  }
+  #footer p {
+    padding: 0;
+  }
+  #footer .footer__icon {
+    display: flex;
+    flex-direction: row;
   }
 }
 #header {
@@ -251,7 +267,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 10%;
@@ -307,21 +323,26 @@ Déplacement du prix lors du survol
 .-heartsMenu {
   margin-left: 68px;
   font-size: 32px;
+  padding-top: 22px;
 }
 .-heartsMenu .far {
   opacity: 1;
   color: black;
   position: absolute;
-  left: 299px;
-  top: 4px;
+  right: 15px;
+  bottom: 6px;
 }
 .-heartsMenu .fas {
   color: white;
+  position: absolute;
+  right: 15px;
+  bottom: 6px;
 }
 
 .-heartsMenu:hover {
   cursor: pointer;
   overflow: hidden;
+  padding-top: 22px;
 }
 .-heartsMenu:hover .far {
   opacity: 0;
@@ -405,7 +426,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 10%;
@@ -421,11 +442,22 @@ Déplacement du prix lors du survol
   background-color: #F2F2F2;
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
-  position: relative;
+  position: absolute;
+  top: 249px;
+  width: 100%;
 }
 .carte__name p {
   font-size: x-large;
   font-family: "Shrikhand", cursive;
+  padding: 18px 0 0 16px;
+}
+
+.entrees {
+  padding-top: 32px;
+}
+
+.entrees, .plats, .desserts {
+  margin-bottom: 32px;
 }
 
 .entrees h2, .plats h2, .desserts h2 {
@@ -531,8 +563,7 @@ Déplacement du prix lors du survol
   flex-direction: row;
   justify-content: center;
 }
-
-.restaurants__cards {
+#restaurants .restaurants__cards {
   width: 332px;
   height: 204px;
   margin: 12px 40px 50px 0;
@@ -542,33 +573,31 @@ Déplacement du prix lors du survol
   text-decoration: none;
   color: black;
 }
-.restaurants__cards .img__restaurants {
+#restaurants .restaurants__cards .img__restaurants {
   width: 100%;
   margin: 0;
   position: relative;
 }
-.restaurants__cards .img__restaurants .btn__nouveau {
+#restaurants .restaurants__cards .img__restaurants .btn__nouveau {
   color: green;
   background-color: #99e2d0;
   position: absolute;
   right: 10px;
   top: 10px;
 }
-.restaurants__cards img {
+#restaurants .restaurants__cards img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-
-h4 {
+#restaurants h4 {
   margin: 0 0 0 0;
   padding-left: 8px;
 }
-
-p {
+#restaurants p {
   margin: 8px 0 0 0;
-  padding-left: 8px;
+  padding: 0 0 8px 8px;
 }
 
 @media screen and (max-width: 375px) {
@@ -591,6 +620,10 @@ p {
     display: flex;
     flex-direction: column;
     width: 170px;
+  }
+  #restaurants .menus .restaurants__cards .cards__content .-infos a {
+    text-decoration: none;
+    color: black;
   }
 
   .fonctionnement h3 {
