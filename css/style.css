@@ -153,6 +153,10 @@ body {
   justify-content: space-between;
   width: 72%;
 }
+#header .-index {
+  justify-content: center;
+  width: 100%;
+}
 #header .header__lieux {
   display: flex;
   justify-content: center;
@@ -267,7 +271,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0;
+    width: 0%;
   }
   to {
     width: 10%;
@@ -426,7 +430,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0;
+    width: 0%;
   }
   to {
     width: 10%;
@@ -591,11 +595,13 @@ Déplacement du prix lors du survol
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-#restaurants h4 {
+
+h4 {
   margin: 0 0 0 0;
   padding-left: 8px;
 }
-#restaurants p {
+
+p {
   margin: 8px 0 0 0;
   padding: 0 0 8px 8px;
 }
