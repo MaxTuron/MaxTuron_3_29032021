@@ -22,7 +22,7 @@ body {
 }
 
 .-hearts {
-  margin-left: 128px;
+  margin-left: 70px;
   font-size: 32px;
   height: 40px;
   width: 40px;
@@ -112,13 +112,33 @@ body {
 #footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #22201f;
   color: white;
+  padding: 10px 0 10px 0;
 }
-#footer p, #footer a, #footer i {
+#footer a {
   color: white;
-  margin: 0 0 8px 0;
+  margin: 8px 0 12px 0;
   text-decoration: none;
+}
+#footer img {
+  height: 32px;
+  margin: 8px 0 8px 0;
+  width: 54%;
+}
+#footer i {
+  height: 18px;
+  width: 25px;
+}
+#footer p {
+  padding: 0;
+}
+#footer .footer__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 375px) {
@@ -142,85 +162,138 @@ body {
     flex-direction: row;
   }
 }
-#header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
-#header .header__logo {
-  display: flex;
-  justify-content: space-between;
-  width: 72%;
+.header__image {
+  width: 100%;
+  height: 220px;
 }
-#header .-index {
+.header__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.header__logo img {
+  margin-top: 12px;
+  width: 170px;
+}
+.header__logo button {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  border: none;
+  background-color: transparent;
+}
+.header .-index {
   justify-content: center;
   width: 100%;
 }
-#header .header__lieux {
+.header__lieux {
   display: flex;
   justify-content: center;
   background-color: lightgrey;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 100%;
+  height: 32px;
 }
-#header .header__infos {
+.header__lieux i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+}
+.header__lieux input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+.header__infos {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F2F2F2;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 100%;
 }
-#header .header__infos p {
+.header__infos p {
   display: flex;
   justify-content: center;
   margin: 0 0 8px 0;
 }
-#header .btn__header {
+
+.btn__header {
   width: 215px;
   padding: 12px;
 }
 
 @media screen and (max-width: 375px) {
-  #header .header__logo img {
+  .header__logo img {
     width: 55%;
     margin: 8px 0 8px 0;
   }
-  #header .header__logo button {
+  .header__logo button {
     display: flex;
     align-items: center;
     background-color: white;
     border: 0;
     padding: 0 8px 0 18px;
   }
-  #header .header__image {
+  .header__image {
     width: 100%;
     height: 250px;
     z-index: -1;
   }
-  #header .header__image img {
+  .header__image img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 0;
   }
-  #header .header__infos {
+  .header__infos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F2F2F2;
     text-align: center;
+    border-radius: 0;
+    width: 100%;
   }
-  #header .header__infos p {
+  .header__infos p {
     width: 75%;
     margin: 0 0 8px 0;
   }
-  #header .header__infos h3 {
+  .header__infos h3 {
     font-weight: bold;
     width: 55%;
     text-align: center;
   }
-  #header .header__lieux i {
+  .header__lieux {
+    width: 100%;
+    border-radius: 0;
+  }
+  .header__lieux i {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 12px 0 0;
+  }
+
+  .btn__header {
+    width: 215px;
+    padding: 12px;
   }
 }
 /**
@@ -271,7 +344,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 10%;
@@ -295,7 +368,7 @@ Déplacement du prix lors du survol
 }
 
 .-hearts {
-  margin-left: 128px;
+  margin-left: 70px;
   font-size: 32px;
   height: 40px;
   width: 40px;
@@ -430,7 +503,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 10%;
@@ -438,7 +511,6 @@ Déplacement du prix lors du survol
 }
 .carte {
   background-color: #F2F2F2;
-  margin: 0;
 }
 .carte__name {
   display: flex;
@@ -447,26 +519,30 @@ Déplacement du prix lors du survol
   border-top-left-radius: 48px;
   border-top-right-radius: 48px;
   position: absolute;
-  top: 249px;
+  top: 202px;
   width: 100%;
+  padding-bottom: 8px;
 }
 .carte__name p {
   font-size: x-large;
   font-family: "Shrikhand", cursive;
   padding: 18px 0 0 16px;
 }
-
-.entrees {
-  padding-top: 32px;
+.carte .entrees, .carte .plats, .carte .desserts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
-
-.entrees, .plats, .desserts {
-  margin-bottom: 32px;
+.carte .sous__titre {
+  margin: 25px 0;
+  font-size: 18px;
+  width: 100%;
 }
-
-.entrees h2, .plats h2, .desserts h2 {
-  margin: 8px 0 8px 0;
+.carte .sous__titre:after {
+  content: "";
   border-bottom: 2px solid #99e2d0;
+  display: block;
+  padding-top: 3px;
   width: 40px;
 }
 
@@ -475,8 +551,8 @@ Déplacement du prix lors du survol
   flex-direction: row;
   border-radius: 18px;
   background-color: white;
-  margin-bottom: 8px;
-  width: 97%;
+  margin: 8px;
+  width: 25%;
 }
 .menu__contenu {
   display: flex;
@@ -511,22 +587,107 @@ Déplacement du prix lors du survol
   margin: 16px 0 16px 74px;
 }
 
+@media screen and (max-width: 375px) {
+  .carte {
+    background-color: #F2F2F2;
+    margin: 0;
+  }
+  .carte__name {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    position: absolute;
+    top: 243px;
+    width: 100%;
+  }
+  .carte__name p {
+    font-size: x-large;
+    font-family: "Shrikhand", cursive;
+    padding: 18px 0 0 16px;
+  }
+  .carte .entrees, .carte .plats, .carte .desserts {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+  }
+  .carte .entrees h2, .carte .plats h2, .carte .desserts h2 {
+    margin: 8px 0 8px 0;
+    border-bottom: 2px solid #99e2d0;
+    width: 40px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    border-radius: 18px;
+    background-color: white;
+    margin-bottom: 8px;
+    width: 97%;
+  }
+  .menu__contenu {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 8px;
+  }
+  .menu__contenu p, .menu__contenu h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu__prix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 14px;
+  }
+  .menu__prix p {
+    margin: 0;
+  }
+  .menu__check {
+    display: none;
+    width: 0;
+  }
+
+  .btn__menu {
+    width: 215px;
+    padding: 12px;
+    margin: 16px 0 16px 74px;
+  }
+}
 .fonctionnement {
   display: flex;
   flex-direction: column;
 }
+.fonctionnement h3 {
+  display: flex;
+  justify-content: center;
+}
 .fonctionnement__section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.fonctionnement__section :hover {
+  background: #f2eafb;
+}
+.fonctionnement__section :hover i {
+  color: #9356dc;
+}
+.fonctionnement__section :hover h6 {
+  background: #9356dc;
 }
 .fonctionnement__section__card {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 10px;
-  margin: 12px 0 12px 0;
+  margin: 12px 0 12px 38px;
   border: 1px solid #F2F2F2;
   width: 270px;
   padding: 0 0 0 32px;
@@ -552,30 +713,30 @@ Déplacement du prix lors du survol
 .fonctionnement__section__card i {
   padding: 0 18px 0 0;
 }
-.fonctionnement__section__card :hover {
-  color: #9356dc;
-}
 
 #restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #F2F2F2;
+  width: 100%;
 }
 #restaurants .menus {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 58px;
 }
 #restaurants .restaurants__cards {
-  width: 332px;
-  height: 204px;
+  height: 230px;
   margin: 12px 40px 50px 0;
   background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #F2F2F2;
   text-decoration: none;
   color: black;
+  position: relative;
 }
 #restaurants .restaurants__cards .img__restaurants {
   width: 100%;
@@ -595,6 +756,19 @@ Déplacement du prix lors du survol
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
+#restaurants .cards__content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+#restaurants .cards__content .-infos {
+  display: flex;
+  flex-direction: column;
+}
+#restaurants .cards__content .-infos a {
+  text-decoration: none;
+  color: black;
+}
 
 h4 {
   margin: 0 0 0 0;
@@ -607,13 +781,23 @@ p {
 }
 
 @media screen and (max-width: 375px) {
+  #restaurants {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #restaurants h3 {
+    margin-left: 22px;
+  }
   #restaurants .menus {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   #restaurants .menus .restaurants__cards {
     height: 100%;
     margin: 0 18px 18px 18px;
+    width: 90%;
   }
   #restaurants .menus .restaurants__cards h3 {
     margin-right: 228px;
@@ -633,6 +817,8 @@ p {
   }
 
   .fonctionnement h3 {
+    display: flex;
+    justify-content: flex-start;
     margin-left: 22px;
   }
   .fonctionnement__section {
@@ -665,9 +851,6 @@ p {
   }
   .fonctionnement__section__card i {
     padding: 0 18px 0 0;
-  }
-  .fonctionnement__section__card :hover {
-    color: #9356dc;
   }
 }
 
