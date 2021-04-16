@@ -109,6 +109,11 @@ body {
   animation: rotate_icon 0.5s 1;
 }
 
+@media screen and (max-width: 375px) {
+  .-hearts {
+    margin-left: 120px;
+  }
+}
 #footer {
   display: flex;
   flex-direction: column;
@@ -344,7 +349,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0;
+    width: 0%;
   }
   to {
     width: 10%;
@@ -455,6 +460,11 @@ Déplacement du prix lors du survol
   animation: rotate_icon 0.5s 1;
 }
 
+@media screen and (max-width: 375px) {
+  .-hearts {
+    margin-left: 120px;
+  }
+}
 /**
 Rotation de l'icône check
  */
@@ -503,7 +513,7 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0;
+    width: 0%;
   }
   to {
     width: 10%;
@@ -511,6 +521,10 @@ Déplacement du prix lors du survol
 }
 .carte {
   background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .carte__name {
   display: flex;
@@ -532,6 +546,7 @@ Déplacement du prix lors du survol
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
 }
 .carte .sous__titre {
   margin: 25px 0;
@@ -730,6 +745,7 @@ Déplacement du prix lors du survol
 }
 #restaurants .restaurants__cards {
   height: 230px;
+  width: 250px;
   margin: 12px 40px 50px 0;
   background-color: white;
   border-radius: 10px;
@@ -793,6 +809,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
   #restaurants .menus .restaurants__cards {
     height: 100%;

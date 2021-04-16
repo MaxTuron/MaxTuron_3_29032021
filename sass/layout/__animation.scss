@@ -99,3 +99,11 @@
   margin-top: 22px;
   animation: rotate_icon 0.5s 1;
 }
+
+@media screen and (max-width: 375px) {
+  .-hearts {
+    margin-left: 120px;
+
+  }
+
+}
