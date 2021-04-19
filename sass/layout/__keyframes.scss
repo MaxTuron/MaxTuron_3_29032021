@@ -26,10 +26,38 @@ Déplacement du prix lors du survol
 @keyframes check_translation {
   from
   {
-    width: 0%;
+    width: 0;
   }
   to
   {
     width: 10%;
+  }
+}
+
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }

@@ -109,6 +109,59 @@ body {
   animation: rotate_icon 0.5s 1;
 }
 
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #9356dc;
+  border-color: #9356dc transparent #99e2d0 transparent;
+  animation: lds-dual-ring 3s;
+}
+
+.spin {
+  animation: spinloader 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.6);
+}
+.spin::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  opacity: 0;
+}
+
+.fade_short {
+  animation: fade-in 0.5s;
+}
+
+.fade_medium {
+  animation: fade-in 1s;
+}
+
+.fade_long {
+  animation: fade-in 1.5s;
+}
+
 @media screen and (max-width: 375px) {
   .-hearts {
     margin-left: 120px;
@@ -193,12 +246,14 @@ body {
   margin-top: 12px;
   width: 170px;
 }
-.header__logo button {
+.header__logo a {
   position: absolute;
   left: 18px;
   top: 12px;
   border: none;
   background-color: transparent;
+  text-decoration: none;
+  color: #22201f;
 }
 .header .-index {
   justify-content: center;
@@ -349,10 +404,33 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 10%;
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .btn {
@@ -460,6 +538,59 @@ Déplacement du prix lors du survol
   animation: rotate_icon 0.5s 1;
 }
 
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #9356dc;
+  border-color: #9356dc transparent #99e2d0 transparent;
+  animation: lds-dual-ring 3s;
+}
+
+.spin {
+  animation: spinloader 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.6);
+}
+.spin::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  opacity: 0;
+}
+
+.fade_short {
+  animation: fade-in 0.5s;
+}
+
+.fade_medium {
+  animation: fade-in 1s;
+}
+
+.fade_long {
+  animation: fade-in 1.5s;
+}
+
 @media screen and (max-width: 375px) {
   .-hearts {
     margin-left: 120px;
@@ -513,10 +644,33 @@ Déplacement du prix lors du survol
 }
 @keyframes check_translation {
   from {
-    width: 0%;
+    width: 0;
   }
   to {
     width: 10%;
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 .carte {
@@ -585,7 +739,6 @@ Déplacement du prix lors du survol
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
   margin: 0 0 0 14px;
 }
 .menu__prix p {
@@ -745,7 +898,6 @@ Déplacement du prix lors du survol
 }
 #restaurants .restaurants__cards {
   height: 230px;
-  width: 250px;
   margin: 12px 40px 50px 0;
   background-color: white;
   border-radius: 10px;

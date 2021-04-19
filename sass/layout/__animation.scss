@@ -100,6 +100,64 @@
   animation: rotate_icon 0.5s 1;
 }
 
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid $color-primary;
+  border-color: $color-primary transparent $color-tertiary transparent;
+  animation: lds-dual-ring 3s;
+}
+
+
+
+.spin {
+  animation: spinloader 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.6);
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      opacity: 0;
+  }
+}
+
+.fade_short
+{
+  animation: fade-in 0.5s;
+}
+
+.fade_medium
+{
+  animation: fade-in 1s;
+}
+
+.fade_long
+{
+  animation: fade-in 1.5s;
+}
+
 @media screen and (max-width: 375px) {
   .-hearts {
     margin-left: 120px;
