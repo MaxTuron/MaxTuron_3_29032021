@@ -5,7 +5,7 @@ body {
 }
 
 .btn {
-  margin: 10px;
+  margin: 16px;
   text-align: center;
   background-size: 200% auto;
   color: white;
@@ -14,11 +14,12 @@ body {
   box-shadow: 0 2px 5px 2px darkgrey;
 }
 .btn:hover {
-  background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
+  background-image: linear-gradient(to top, #9356DC 20%, #DA22FF 80%);
+  box-shadow: 0 3px 6px 3px darkgrey;
 }
 
 .btn__grad {
-  background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
+  background-image: linear-gradient(to top, #854fb4 10%, #d54cf6 90%);
 }
 
 .-hearts {
@@ -109,13 +110,12 @@ body {
   animation: rotate_icon 0.5s 1;
 }
 
-.lds-dual-ring {
+.spin {
   display: inline-block;
   width: 80px;
   height: 80px;
 }
-
-.lds-dual-ring:after {
+.spin:after {
   content: "";
   position: fixed;
   bottom: 0;
@@ -126,12 +126,12 @@ body {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #9356dc;
+  border: 6px solid;
   border-color: #9356dc transparent #99e2d0 transparent;
-  animation: lds-dual-ring 3s;
+  animation: spin 3s;
 }
 
-.spin {
+.spinloader {
   animation: spinloader 3s;
   animation-delay: 1s;
   animation-fill-mode: both;
@@ -143,7 +143,7 @@ body {
   text-align: center;
   background-color: rgba(10, 10, 10, 0.6);
 }
-.spin::after {
+.spinloader::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -165,6 +165,14 @@ body {
 @media screen and (max-width: 375px) {
   .-hearts {
     margin-left: 120px;
+  }
+
+  .spin:after {
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    top: 30%;
   }
 }
 #footer {
@@ -410,7 +418,7 @@ Déplacement du prix lors du survol
     width: 10%;
   }
 }
-@keyframes lds-dual-ring {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -420,6 +428,9 @@ Déplacement du prix lors du survol
   }
 }
 @keyframes spinloader {
+  50% {
+    background-color: transparent;
+  }
   100% {
     opacity: 0;
     z-index: -1;
@@ -434,7 +445,7 @@ Déplacement du prix lors du survol
   }
 }
 .btn {
-  margin: 10px;
+  margin: 16px;
   text-align: center;
   background-size: 200% auto;
   color: white;
@@ -443,11 +454,12 @@ Déplacement du prix lors du survol
   box-shadow: 0 2px 5px 2px darkgrey;
 }
 .btn:hover {
-  background-image: linear-gradient(to top, #9356DC 40%, #DA22FF 70%);
+  background-image: linear-gradient(to top, #9356DC 20%, #DA22FF 80%);
+  box-shadow: 0 3px 6px 3px darkgrey;
 }
 
 .btn__grad {
-  background-image: linear-gradient(to top, #9356DC 10%, #DA22FF 90%);
+  background-image: linear-gradient(to top, #854fb4 10%, #d54cf6 90%);
 }
 
 .-hearts {
@@ -538,13 +550,12 @@ Déplacement du prix lors du survol
   animation: rotate_icon 0.5s 1;
 }
 
-.lds-dual-ring {
+.spin {
   display: inline-block;
   width: 80px;
   height: 80px;
 }
-
-.lds-dual-ring:after {
+.spin:after {
   content: "";
   position: fixed;
   bottom: 0;
@@ -555,12 +566,12 @@ Déplacement du prix lors du survol
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #9356dc;
+  border: 6px solid;
   border-color: #9356dc transparent #99e2d0 transparent;
-  animation: lds-dual-ring 3s;
+  animation: spin 3s;
 }
 
-.spin {
+.spinloader {
   animation: spinloader 3s;
   animation-delay: 1s;
   animation-fill-mode: both;
@@ -572,7 +583,7 @@ Déplacement du prix lors du survol
   text-align: center;
   background-color: rgba(10, 10, 10, 0.6);
 }
-.spin::after {
+.spinloader::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -594,6 +605,14 @@ Déplacement du prix lors du survol
 @media screen and (max-width: 375px) {
   .-hearts {
     margin-left: 120px;
+  }
+
+  .spin:after {
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    top: 30%;
   }
 }
 /**
@@ -650,7 +669,7 @@ Déplacement du prix lors du survol
     width: 10%;
   }
 }
-@keyframes lds-dual-ring {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -660,6 +679,9 @@ Déplacement du prix lors du survol
   }
 }
 @keyframes spinloader {
+  50% {
+    background-color: transparent;
+  }
   100% {
     opacity: 0;
     z-index: -1;
@@ -829,6 +851,7 @@ Déplacement du prix lors du survol
 .fonctionnement {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .fonctionnement h3 {
   display: flex;

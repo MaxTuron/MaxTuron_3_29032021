@@ -101,30 +101,31 @@
 }
 
 
-.lds-dual-ring {
+.spin {
   display: inline-block;
   width: 80px;
   height: 80px;
+
+  &:after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid;
+    border-color: $color-primary transparent $color-tertiary transparent;
+    animation: spin 3s;
+  }
 }
-.lds-dual-ring:after {
-  content: "";
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  top: 50%;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid $color-primary;
-  border-color: $color-primary transparent $color-tertiary transparent;
-  animation: lds-dual-ring 3s;
-}
 
 
 
-.spin {
+.spinloader {
   animation: spinloader 3s;
   animation-delay: 1s;
   animation-fill-mode: both;
@@ -161,6 +162,14 @@
 @media screen and (max-width: 375px) {
   .-hearts {
     margin-left: 120px;
+  }
+
+  .spin:after {
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    top: 30%;
 
   }
 

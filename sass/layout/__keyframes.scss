@@ -35,7 +35,7 @@ Déplacement du prix lors du survol
 }
 
 
-@keyframes lds-dual-ring {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -47,6 +47,11 @@ Déplacement du prix lors du survol
 
 
 @keyframes spinloader {
+
+  50% {
+    background-color: transparent;
+  }
+
   100% {
     opacity: 0;
     z-index: -1;
