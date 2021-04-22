@@ -96,14 +96,14 @@
   margin: 16px 0 16px 68px;
 }
 
-@media screen and (min-width: 376px) and (max-width: 670px) {
+@media screen and (min-width: 376px) and (max-width: 900px) {
   .menu {
     display: flex;
     flex-direction: row;
     border-radius: 18px;
     background-color: $color_white;
     margin: 0 22px 8px 22px;
-    width: 89%;
+    width: 72%;
 
     &__contenu {
       display: flex;
