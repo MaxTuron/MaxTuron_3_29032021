@@ -47,9 +47,8 @@ Déplacement du prix lors du survol
 
 
 @keyframes spinloader {
-
-  50% {
-    background-color: transparent;
+  90%{
+    z-index: 0;
   }
 
   100% {

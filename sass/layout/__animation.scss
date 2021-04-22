@@ -12,7 +12,7 @@
   }
 
   .fas {
-    color: white;
+    color: $color_white;
   }
 }
 
@@ -40,14 +40,14 @@
 
   .far {
     opacity: 1;
-    color: black;
+    color: $color_black;
     position: absolute;
     right: 15px;
     bottom: 6px;
   }
 
   .fas {
-    color: white;
+    color: $color_white;
     position: absolute;
     right: 15px;
     bottom: 6px;
@@ -77,11 +77,11 @@
     display: block;
     align-items: center;
     justify-content: flex-end;
-    color: white;
+    color: $color_white;
     padding: 0;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    background-color: $color-tertiary;
+    background-color: $color_tertiary;
     overflow: hidden;
     transition: all 3s;
     animation: check_translation 0.5s 1 forwards;
@@ -116,17 +116,16 @@
     width: 64px;
     height: 64px;
     margin: 8px;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 6px solid;
-    border-color: $color-primary transparent $color-tertiary transparent;
-    animation: spin 3s;
+    border-color: $color_primary transparent $color_tertiary transparent;
+    animation: spin $spin_time;
   }
 }
 
 
-
 .spinloader {
-  animation: spinloader 3s;
+  animation: spinloader $spin_time;
   animation-delay: 1s;
   animation-fill-mode: both;
   position: fixed;
@@ -135,8 +134,8 @@
   right: 0;
   top: 0;
   text-align: center;
-  background-color: rgba(10, 10, 10, 0.6);
-    &::after {
+  background-color: rgba(10, 10, 10, 0.4);
+    &:after {
       content: "";
       display: inline-block;
       height: 100%;

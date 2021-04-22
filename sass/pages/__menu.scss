@@ -13,7 +13,7 @@
   &__name {
     display: flex;
     align-items: center;
-    background-color: #F2F2F2;
+    background-color: $background_grey;
     border-top-left-radius: 48px;
     border-top-right-radius: 48px;
     position: absolute;
@@ -43,7 +43,7 @@
     width: 100%;
     &:after {
       content: "";
-      border-bottom: 2px solid $color-tertiary;
+      border-bottom: 2px solid $color_tertiary;
       display: block;
       padding-top: 3px;
       width: 40px;
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 18px;
-    background-color: white;
+    background-color: $color_white;
     margin: 8px;
     width: 25%;
 
@@ -93,9 +93,27 @@
 .btn__menu {
   width: 215px;
   padding: 12px;
-  margin: 16px 0 16px 74px;
+  margin: 16px 0 16px 68px;
 }
 
+@media screen and (min-width: 376px) and (max-width: 670px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    border-radius: 18px;
+    background-color: $color_white;
+    margin: 0 22px 8px 22px;
+    width: 89%;
+
+    &__contenu {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
 
 @media screen and (max-width: 375px) {
   .carte {
@@ -105,7 +123,7 @@
     &__name {
       display: flex;
       align-items: center;
-      background-color: #F2F2F2;
+      background-color: $background_grey;
       border-top-left-radius: 48px;
       border-top-right-radius: 48px;
       position: absolute;
@@ -128,7 +146,7 @@
 
     .entrees h2, .plats h2, .desserts h2 {
       margin: 8px 0 8px 0;
-      border-bottom: 2px solid $color-tertiary;
+      border-bottom: 2px solid $color_tertiary;
       width: 40px;
     }
   }
@@ -137,7 +155,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 18px;
-    background-color: white;
+    background-color: $color_white;
     margin-bottom: 8px;
     width: 97%;
 
@@ -147,7 +165,6 @@
       flex-direction: column;
       overflow: hidden;
       white-space: nowrap;
-      padding: 8px;
 
       p, h4 {
         overflow: hidden;
@@ -175,6 +192,6 @@
   .btn__menu {
     width: 215px;
     padding: 12px;
-    margin: 16px 0 16px 74px;
+    margin: 16px 52px 16px 68px;
   }
 }
