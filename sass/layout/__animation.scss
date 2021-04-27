@@ -134,7 +134,7 @@
   right: 0;
   top: 0;
   text-align: center;
-  background-color: rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.8);
     &:after {
       content: "";
       display: inline-block;
@@ -145,17 +145,17 @@
 
 .fade_short
 {
-  animation: fade-in 0.5s;
+  animation: fade-in 1s;
 }
 
 .fade_medium
 {
-  animation: fade-in 1s;
+  animation: fade-in 2s;
 }
 
 .fade_long
 {
-  animation: fade-in 1.5s;
+  animation: fade-in 3s;
 }
 
 @media screen and (max-width: 375px) {

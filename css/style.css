@@ -1,9 +1,7 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-  font-family: "Roboto", cursive;
-}
-
+/*
+Déclaration des variables
+ */
 .btn {
   margin: 16px;
   text-align: center;
@@ -23,6 +21,9 @@ body {
   background-image: linear-gradient(to top, #854fb4 10%, #d54cf6 90%);
 }
 
+/*
+Déclaration des variables
+ */
 .-hearts {
   margin-left: 70px;
   font-size: 32px;
@@ -142,7 +143,7 @@ body {
   right: 0;
   top: 0;
   text-align: center;
-  background-color: rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.8);
 }
 .spinloader:after {
   content: "";
@@ -152,15 +153,15 @@ body {
 }
 
 .fade_short {
-  animation: fade-in 0.5s;
-}
-
-.fade_medium {
   animation: fade-in 1s;
 }
 
+.fade_medium {
+  animation: fade-in 2s;
+}
+
 .fade_long {
-  animation: fade-in 1.5s;
+  animation: fade-in 3s;
 }
 
 @media screen and (max-width: 375px) {
@@ -176,7 +177,10 @@ body {
     top: 30%;
   }
 }
-#footer {
+/*
+Déclaration des variables
+ */
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -184,24 +188,24 @@ body {
   color: #FFFFFF;
   padding: 10px 0 10px 0;
 }
-#footer a {
+.footer a {
   color: #FFFFFF;
   margin: 8px 0 12px 0;
   text-decoration: none;
 }
-#footer img {
+.footer img {
   height: 32px;
   margin: 8px 0 8px 0;
   width: 54%;
 }
-#footer i {
+.footer i {
   height: 18px;
   width: 25px;
 }
-#footer p {
+.footer p {
   padding: 0;
 }
-#footer .footer__icon {
+.footer__icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -209,26 +213,33 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  #footer {
+  .footer {
     padding: 0 0 0 18px;
+    align-items: flex-start;
   }
-  #footer img {
+  .footer img {
     height: 32px;
     margin: 8px 0 8px 0;
     width: 54%;
   }
-  #footer i {
+  .footer i {
     height: 18px;
     width: 25px;
   }
-  #footer p {
+  .footer p {
     padding: 0;
   }
-  #footer .footer__icon {
+  .footer__icon {
     display: flex;
     flex-direction: row;
   }
 }
+/*
+Lien vers les fichiers nécéssaires
+ */
+/*
+Déclaration des variables
+ */
 .header {
   display: flex;
   flex-direction: column;
@@ -260,7 +271,7 @@ body {
 .header__logo a {
   position: absolute;
   left: 18px;
-  top: 12px;
+  top: 18px;
   border: none;
   background-color: transparent;
   text-decoration: none;
@@ -311,10 +322,6 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  .header__logo img {
-    width: 55%;
-    margin: 8px 0 8px 0;
-  }
   .header__logo button {
     display: flex;
     align-items: center;
@@ -426,7 +433,6 @@ Déplacement du prix lors du survol
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 @keyframes spinloader {
@@ -440,12 +446,15 @@ Déplacement du prix lors du survol
 }
 @keyframes fade-in {
   0% {
-    transform: scale(0.1);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
+/*
+Déclaration des variables
+ */
 .btn {
   margin: 16px;
   text-align: center;
@@ -465,6 +474,9 @@ Déplacement du prix lors du survol
   background-image: linear-gradient(to top, #854fb4 10%, #d54cf6 90%);
 }
 
+/*
+Déclaration des variables
+ */
 .-hearts {
   margin-left: 70px;
   font-size: 32px;
@@ -584,7 +596,7 @@ Déplacement du prix lors du survol
   right: 0;
   top: 0;
   text-align: center;
-  background-color: rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.8);
 }
 .spinloader:after {
   content: "";
@@ -594,15 +606,15 @@ Déplacement du prix lors du survol
 }
 
 .fade_short {
-  animation: fade-in 0.5s;
-}
-
-.fade_medium {
   animation: fade-in 1s;
 }
 
+.fade_medium {
+  animation: fade-in 2s;
+}
+
 .fade_long {
-  animation: fade-in 1.5s;
+  animation: fade-in 3s;
 }
 
 @media screen and (max-width: 375px) {
@@ -678,7 +690,6 @@ Déplacement du prix lors du survol
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 @keyframes spinloader {
@@ -692,12 +703,20 @@ Déplacement du prix lors du survol
 }
 @keyframes fade-in {
   0% {
-    transform: scale(0.1);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
+/*
+Déclaration des variables
+ */
+body {
+  margin: 0;
+  font-family: "Roboto", cursive;
+}
+
 .carte {
   background-color: #F2F2F2;
   display: flex;
@@ -728,7 +747,7 @@ Déplacement du prix lors du survol
   width: 100%;
 }
 .carte .sous__titre {
-  margin: 25px 0;
+  margin: 25px 0 0 4%;
   font-size: 18px;
   width: 100%;
 }
@@ -763,8 +782,8 @@ Déplacement du prix lors du survol
 .menu__prix {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 0 0 14px;
+  align-items: end;
+  margin: 0 12px 0 14px;
 }
 .menu__prix p {
   margin: 0;
@@ -796,6 +815,19 @@ Déplacement du prix lors du survol
     overflow: hidden;
     white-space: nowrap;
   }
+
+  .sous__titre {
+    margin: 25px 0 0 13%;
+    font-size: 18px;
+    width: 100%;
+  }
+  .sous__titre:after {
+    content: "";
+    border-bottom: 2px solid #99e2d0;
+    display: block;
+    padding-top: 3px;
+    width: 40px;
+  }
 }
 @media screen and (max-width: 375px) {
   .carte {
@@ -823,7 +855,7 @@ Déplacement du prix lors du survol
     margin-bottom: 32px;
   }
   .carte .entrees h2, .carte .plats h2, .carte .desserts h2 {
-    margin: 8px 0 8px 0;
+    margin: 8px 0 8px 14px;
     border-bottom: 2px solid #99e2d0;
     width: 40px;
   }
@@ -848,9 +880,6 @@ Déplacement du prix lors du survol
     text-overflow: ellipsis;
   }
   .menu__prix {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 0 0 14px;
   }
   .menu__prix p {
@@ -867,6 +896,14 @@ Déplacement du prix lors du survol
     margin: 16px 52px 16px 68px;
   }
 }
+/*
+Déclaration des variables
+ */
+body {
+  margin: 0;
+  font-family: "Roboto", cursive;
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -925,7 +962,7 @@ Déplacement du prix lors du survol
   padding: 0 18px 0 0;
 }
 
-#restaurants {
+.restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -933,14 +970,14 @@ Déplacement du prix lors du survol
   width: 100%;
   z-index: 1;
 }
-#restaurants .menus {
+.restaurants .menus {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   margin-left: 58px;
 }
-#restaurants .restaurants__cards {
+.restaurants__cards {
   height: 230px;
   margin: 12px 40px 50px 0;
   background-color: #FFFFFF;
@@ -950,34 +987,34 @@ Déplacement du prix lors du survol
   color: #000000;
   position: relative;
 }
-#restaurants .restaurants__cards .img__restaurants {
+.restaurants__cards .img__restaurants {
   width: 100%;
   margin: 0;
   position: relative;
 }
-#restaurants .restaurants__cards .img__restaurants .btn__nouveau {
+.restaurants__cards .img__restaurants .btn__nouveau {
   color: green;
   background-color: #99e2d0;
   position: absolute;
   right: 10px;
   top: 10px;
 }
-#restaurants .restaurants__cards img {
+.restaurants__cards img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-#restaurants .cards__content {
+.restaurants .cards__content {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-#restaurants .cards__content .-infos {
+.restaurants .cards__content .-infos {
   display: flex;
   flex-direction: column;
 }
-#restaurants .cards__content .-infos a {
+.restaurants .cards__content .-infos a {
   text-decoration: none;
   color: #000000;
 }
@@ -993,38 +1030,38 @@ p {
 }
 
 @media screen and (max-width: 375px) {
-  #restaurants {
+  .restaurants {
     display: flex;
     align-items: flex-start;
     width: 100%;
   }
-  #restaurants h3 {
+  .restaurants h3 {
     margin-left: 22px;
   }
-  #restaurants .menus {
+  .restaurants .menus {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0;
   }
-  #restaurants .menus .restaurants__cards {
+  .restaurants .menus .restaurants__cards {
     height: 100%;
     margin: 0 18px 18px 18px;
     width: 90%;
   }
-  #restaurants .menus .restaurants__cards h3 {
+  .restaurants .menus .restaurants__cards h3 {
     margin-right: 228px;
   }
-  #restaurants .menus .restaurants__cards .cards__content {
+  .restaurants .menus .restaurants__cards .cards__content {
     display: flex;
     flex-direction: row;
   }
-  #restaurants .menus .restaurants__cards .cards__content .-infos {
+  .restaurants .menus .restaurants__cards .cards__content .-infos {
     display: flex;
     flex-direction: column;
     width: 170px;
   }
-  #restaurants .menus .restaurants__cards .cards__content .-infos a {
+  .restaurants .menus .restaurants__cards .cards__content .-infos a {
     text-decoration: none;
     color: #000000;
   }

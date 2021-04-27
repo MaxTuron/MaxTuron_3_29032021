@@ -3,6 +3,12 @@
 @import "../layout/_keyframes";
 @import "../utils/_variables";
 
+body
+{
+  margin: 0;
+  font-family: 'Roboto', cursive;
+}
+
 .carte {
   background-color: $background_grey;
   display: flex;
@@ -38,7 +44,7 @@
 
   .sous__titre
   {
-    margin: 25px 0;
+    margin: 25px 0 0 4%;
     font-size: 18px;
     width: 100%;
     &:after {
@@ -76,8 +82,8 @@
     &__prix {
       display: flex;
       justify-content: center;
-      align-items: center;
-      margin: 0 0 0 14px;
+      align-items: end;
+      margin: 0 12px 0 14px;
 
       p {
         margin: 0;
@@ -113,6 +119,21 @@
       white-space: nowrap;
     }
   }
+
+  .sous__titre
+  {
+    margin: 25px 0 0 13%;
+    font-size: 18px;
+    width: 100%;
+    &:after {
+      content: "";
+      border-bottom: 2px solid $color_tertiary;
+      display: block;
+      padding-top: 3px;
+      width: 40px;
+    }
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -145,7 +166,7 @@
     }
 
     .entrees h2, .plats h2, .desserts h2 {
-      margin: 8px 0 8px 0;
+      margin: 8px 0 8px 14px;
       border-bottom: 2px solid $color_tertiary;
       width: 40px;
     }
@@ -173,9 +194,6 @@
     }
 
     &__prix {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin: 0 0 0 14px;
 
       p {

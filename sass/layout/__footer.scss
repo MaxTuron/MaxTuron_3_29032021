@@ -1,6 +1,6 @@
 @import "../utils/_variables";
 
-#footer
+.footer
 {
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
   p {
     padding: 0;
   }
-  .footer__icon
+  &__icon
   {
     display: flex;
     flex-direction: row;
@@ -39,8 +39,9 @@
 }
 
 @media screen and (max-width: 375px) {
-  #footer {
+  .footer {
     padding: 0 0 0 18px;
+    align-items: flex-start;
 
     img {
       height: 32px;
@@ -58,7 +59,7 @@
      padding: 0;
     }
 
-    .footer__icon
+    &__icon
     {
       display: flex;
       flex-direction: row;
