@@ -1,6 +1,4 @@
-/*
-Lien vers les fichiers nécéssaires
- */
+
 @import "../utils/_variables";
 
 .header {
@@ -12,47 +10,34 @@ Lien vers les fichiers nécéssaires
   background-color: $color_white;
   z-index: 1;
 
-  &__image
-  {
-    width: 100%;
-    height: 220px;
-    img
-    {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  &__logo{
+    width: 250px;
+    padding: 8px 0 8px 0;
   }
-
-  &__logo
-  {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 10px;
-
-    img
-    {
-      margin-top: 12px;
-      width: 170px;
-    }
-
     a
     {
       position: absolute;
       left: 18px;
-      top: 18px;
+      top: 21px;
       border: none;
       background-color: transparent;
       text-decoration: none;
       color: $color_black;
     }
-  }
-  .-index
-  {
-    justify-content: center;
+
+  &__menu{
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
+
+  &__image
+  {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
 
   &__lieux {
     display: flex;
@@ -65,15 +50,16 @@ Lien vers les fichiers nécéssaires
     i
     {
     display: flex;
-      justify-content: center;
       align-items: center;
-      padding-right: 5px;
     }
     input
     {
       background-color: transparent;
       border: 0;
       outline: none;
+      font-weight: bold;
+      text-align: center;
+      width: 128px;
     }
   }
 
@@ -85,6 +71,7 @@ Lien vers les fichiers nécéssaires
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     width: 100%;
+    padding: 22px 0 44px 0;
     p {
       display: flex;
       justify-content: center;
@@ -103,6 +90,11 @@ Lien vers les fichiers nécéssaires
 
   .header {
 
+    &__image
+    {
+      height: 249px;
+    }
+
     &__logo button {
       display: flex;
       align-items: center;
@@ -110,19 +102,6 @@ Lien vers les fichiers nécéssaires
       border: 0;
       padding: 0 8px 0 18px;
     }
-
-    &__image {
-      width: 100%;
-      height: 250px;
-
-      img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 0;
-      }
-    }
-
 
     &__infos {
       display: flex;
@@ -149,12 +128,6 @@ Lien vers les fichiers nécéssaires
     &__lieux {
       width: 100%;
       border-radius: 0;
-    i {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 12px 0 0;
-    }
   }
   }
   .btn__header

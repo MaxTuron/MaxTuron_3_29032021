@@ -1,9 +1,10 @@
 @import "../utils/_variables";
 .-hearts {
-  margin-left: 70px;
   font-size: 32px;
-  height: 40px;
+  height: 58px;
   width: 40px;
+  align-items: center;
+  margin-right: 8px;
 
   .far {
     opacity: 1;
@@ -34,7 +35,6 @@
 }
 
 .-heartsMenu {
-  margin-left: 68px;
   font-size: 32px;
   padding-top: 22px;
 
@@ -159,10 +159,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  .-hearts {
-    margin-left: 120px;
-  }
-
   .spin:after {
     position: fixed;
     bottom: 0;

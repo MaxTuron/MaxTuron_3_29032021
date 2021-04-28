@@ -90,7 +90,8 @@ body
   }
 
   &__cards {
-    height: 230px;
+    width: 275px;
+    height: 215px;
     margin: 12px 40px 50px 0;
     background-color: $color_white;
     border-radius: 10px;
@@ -98,6 +99,11 @@ body
     text-decoration: none;
     color: $color_black;
     position: relative;
+
+    a {
+      text-decoration: none;
+      color: $color_black;
+    }
 
     .img__restaurants {
       width: 100%;
@@ -123,27 +129,27 @@ body
   .cards__content {
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: space-between;
 
     .-infos {
       display: flex;
       flex-direction: column;
-
-      a {
-        text-decoration: none;
-        color: $color_black;
+      width: 295px;
+      h4 {
+        margin: 8px 0 0 8px;
+        padding: 0 4px 0 4px;
+      }
+      p {
+        margin: 4px 0 12px 8px;
+        padding: 0 4px 0 4px;
       }
     }
   }
 }
-h4 {
-  margin: 0 0 0 0;
-  padding-left: 8px;
-}
 
-p {
-  margin: 8px 0 0 0;
-  padding: 0 0 8px 8px;
+p, h4 {
+  margin: 4px 0 0 0;
+  padding: 0 4px 0 4px;
 }
 
 
@@ -173,13 +179,7 @@ p {
         }
 
         .cards__content {
-          display: flex;
-          flex-direction: row;
-
           .-infos {
-            display: flex;
-            flex-direction: column;
-            width: 170px;
             a {
               text-decoration: none;
               color: $color_black;
