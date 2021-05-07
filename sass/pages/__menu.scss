@@ -3,8 +3,12 @@
 @import "../layout/_keyframes";
 @import "../utils/_variables";
 
-body
-{
+/*
+SCSS des pages de menu
+ */
+
+
+body {
   margin: 0;
   font-family: 'Roboto', cursive;
 }
@@ -32,11 +36,9 @@ body
       font-family: 'Shrikhand', cursive;
       padding: 18px 0 0 16px;
     }
-
   }
 
-  .entrees, .plats, .desserts
-  {
+  .entrees, .plats, .desserts {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -105,6 +107,11 @@ body
   margin: 32px 0 32px 0;
 }
 
+/*
+SCSS du header entre 900px et 376px
+ */
+
+
 @media screen and (min-width: 376px) and (max-width: 900px) {
   .menu {
     display: flex;
@@ -140,6 +147,9 @@ body
     }
   }
 }
+/*
+SCSS du header 375px<
+ */
 
 @media screen and (max-width: 375px) {
   .carte {
@@ -164,7 +174,6 @@ body
     }
 
     .entrees, .plats, .desserts {
-
       display: flex;
       justify-content: flex-start;
       margin-bottom: 32px;
@@ -197,7 +206,6 @@ body
         text-overflow: ellipsis;
       }
     }
-
 
     &__check {
       display: none;

@@ -1,4 +1,9 @@
 @import "../utils/_variables";
+
+/**
+SCSS des différentes animations
+ */
+
 .-hearts {
   font-size: 32px;
   height: 58px;
@@ -157,6 +162,10 @@
 {
   animation: fade-in 3s;
 }
+
+/**
+SCSS des différentes animations 375px<
+ */
 
 @media screen and (max-width: 375px) {
   .spin:after {

@@ -23,6 +23,10 @@ Déplacement du prix lors du survol
   100% {transform: translate(-25px, 0)}
 }
 
+/**
+Apparition du check lors du survol
+ */
+
 @keyframes check_translation {
   10% {
 
@@ -50,6 +54,9 @@ Déplacement du prix lors du survol
   }
 }
 
+/**
+Rotation du spinner
+ */
 
 @keyframes spin {
   0% {
@@ -60,6 +67,9 @@ Déplacement du prix lors du survol
   }
 }
 
+/*
+Permet de réduire l'opcacité du spinner et le le faire disparaitre
+ */
 
 @keyframes spinloader {
   90%{
@@ -71,6 +81,10 @@ Déplacement du prix lors du survol
     z-index: -1;
   }
 }
+
+/*
+Permet l'apparition des plats
+ */
 
 @keyframes fade-in {
   0% {

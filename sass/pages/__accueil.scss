@@ -1,7 +1,10 @@
 @import "../utils/_variables";
 
-body
-{
+/*
+SCSS de la page d'accueil
+ */
+
+body {
   margin: 0;
   font-family: 'Roboto', cursive;
 }
@@ -12,8 +15,7 @@ body
   background-color: $color_white;
   z-index: 1;
 
-  h3
-  {
+  h3 {
     display: flex;
     justify-content: center;
   }
@@ -24,14 +26,14 @@ body
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    :hover
-    {
+    :hover {
       background: #f2eafb;
-      i{
+
+      i {
         color: $color_primary;
       }
-      h6
-      {
+
+      h6 {
         background: $color_primary;
       }
     }
@@ -153,14 +155,17 @@ p, h4 {
   padding: 0 4px 0 4px;
 }
 
+/*
+Média query 375px<
+ */
 
 @media screen and (max-width: 375px) {
   .restaurants {
     display: flex;
     align-items: flex-start;
     width: 100%;
-    h3
-    {
+
+    h3 {
       margin-left: 22px;
     }
 

@@ -2,6 +2,9 @@
 /*
 Déclaration des variables
  */
+/*
+SCSS des boutons
+ */
 .btn {
   margin: 16px;
   text-align: center;
@@ -23,6 +26,9 @@ Déclaration des variables
 
 /*
 Déclaration des variables
+ */
+/**
+SCSS des différentes animations
  */
 .-hearts {
   font-size: 32px;
@@ -164,6 +170,9 @@ Déclaration des variables
   animation: fade-in 3s;
 }
 
+/**
+SCSS des différentes animations 375px<
+ */
 @media screen and (max-width: 375px) {
   .spin:after {
     position: fixed;
@@ -232,6 +241,9 @@ Déclaration des variables
 }
 /*
 Déclaration des variables
+ */
+/*
+SCSS du header
  */
 .header {
   display: flex;
@@ -307,6 +319,9 @@ Déclaration des variables
   padding: 12px;
 }
 
+/*
+SCSS du header 375px<
+ */
 @media screen and (max-width: 375px) {
   .header__image {
     height: 249px;
@@ -392,6 +407,9 @@ Déplacement du prix lors du survol
     transform: translate(-25px, 0);
   }
 }
+/**
+Apparition du check lors du survol
+ */
 @keyframes check_translation {
   10% {
     width: 10px;
@@ -412,6 +430,9 @@ Déplacement du prix lors du survol
     width: 55px;
   }
 }
+/**
+Rotation du spinner
+ */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -420,6 +441,9 @@ Déplacement du prix lors du survol
     transform: rotate(360deg);
   }
 }
+/*
+Permet de réduire l'opcacité du spinner et le le faire disparaitre
+ */
 @keyframes spinloader {
   90% {
     z-index: 0;
@@ -429,6 +453,9 @@ Déplacement du prix lors du survol
     z-index: -1;
   }
 }
+/*
+Permet l'apparition des plats
+ */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -439,6 +466,9 @@ Déplacement du prix lors du survol
 }
 /*
 Déclaration des variables
+ */
+/*
+SCSS des boutons
  */
 .btn {
   margin: 16px;
@@ -461,6 +491,9 @@ Déclaration des variables
 
 /*
 Déclaration des variables
+ */
+/**
+SCSS des différentes animations
  */
 .-hearts {
   font-size: 32px;
@@ -602,6 +635,9 @@ Déclaration des variables
   animation: fade-in 3s;
 }
 
+/**
+SCSS des différentes animations 375px<
+ */
 @media screen and (max-width: 375px) {
   .spin:after {
     position: fixed;
@@ -657,6 +693,9 @@ Déplacement du prix lors du survol
     transform: translate(-25px, 0);
   }
 }
+/**
+Apparition du check lors du survol
+ */
 @keyframes check_translation {
   10% {
     width: 10px;
@@ -677,6 +716,9 @@ Déplacement du prix lors du survol
     width: 55px;
   }
 }
+/**
+Rotation du spinner
+ */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -685,6 +727,9 @@ Déplacement du prix lors du survol
     transform: rotate(360deg);
   }
 }
+/*
+Permet de réduire l'opcacité du spinner et le le faire disparaitre
+ */
 @keyframes spinloader {
   90% {
     z-index: 0;
@@ -694,6 +739,9 @@ Déplacement du prix lors du survol
     z-index: -1;
   }
 }
+/*
+Permet l'apparition des plats
+ */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -704,6 +752,9 @@ Déplacement du prix lors du survol
 }
 /*
 Déclaration des variables
+ */
+/*
+SCSS des pages de menu
  */
 body {
   margin: 0;
@@ -794,6 +845,9 @@ body {
   margin: 32px 0 32px 0;
 }
 
+/*
+SCSS du header entre 900px et 376px
+ */
 @media screen and (min-width: 376px) and (max-width: 900px) {
   .menu {
     display: flex;
@@ -824,6 +878,9 @@ body {
     width: 40px;
   }
 }
+/*
+SCSS du header 375px<
+ */
 @media screen and (max-width: 375px) {
   .carte {
     background-color: #F2F2F2;
@@ -886,6 +943,9 @@ body {
 }
 /*
 Déclaration des variables
+ */
+/*
+SCSS de la page d'accueil
  */
 body {
   margin: 0;
@@ -1022,6 +1082,9 @@ p, h4 {
   padding: 0 4px 0 4px;
 }
 
+/*
+Média query 375px<
+ */
 @media screen and (max-width: 375px) {
   .restaurants {
     display: flex;
